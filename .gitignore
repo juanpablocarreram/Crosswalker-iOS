@@ -1,0 +1,11 @@
+.DS_Store
+/.build/
+/.swiftpm/
+/.reference-build/
+/DerivedData/
+/TestResults-*.xcresult/
+**/xcuserdata/
+**/__pycache__/
+
+# Archivo de entrega local
+/dist/
