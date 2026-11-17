@@ -1,0 +1,22 @@
+{
+  "branch": "experiment/nuevos-assets",
+  "commit": "37d3fe9e08fae3589538ec78e2f4a5cca4403df5",
+  "freshRemoteVerified": true,
+  "debugTests": 17,
+  "optimizedReleaseTests": 16,
+  "failures": 0,
+  "kotlinTrajectories": 339,
+  "samples": 4006,
+  "identicalRGBAImages": 70,
+  "importedResources": 94,
+  "oggPCMConversionsVerified": 2,
+  "iPhoneAppReleaseBuild": "SUCCEEDED",
+  "iPhoneDebugTestBuild": "SUCCEEDED",
+  "iOSUITestsExecuted": true,
+  "signed": false,
+  "iOSUITests": 2,
+  "iOSCompactUnitTests": 17,
+  "iOSCompactUITests": 1,
+  "androidInstrumentedTests": 8,
+  "runtimeEvidence": "runtime/results.json"
+}

@@ -1,0 +1,238 @@
+[
+  {
+    "file": "persisted-campaign.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "credits-end.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-12-won.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-12-running.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-12-plan.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-11-won.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-11-running.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-11-plan.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-10-won.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-10-running.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-10-plan.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-09-won.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-09-running.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-09-plan.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-08-won.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-08-running.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-08-plan.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-07-won.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-07-running.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-07-plan.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-06-won.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-06-running.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-06-plan.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-05-won.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-05-running.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-05-plan.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-04-won.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-04-running.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-04-plan.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-03-won.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-03-running.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-03-plan.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-02-won.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-02-running.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-02-plan.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "retry-won.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "collision-result.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "unsafe-plan.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-01-won.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "simulation-pause.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-01-running-moved.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "level-01-running-start.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-launch.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-tool-help.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-look.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-crossing.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-09.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-08.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-07.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-06.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-05.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-04.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-03.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-map.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-pause.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-01.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-00.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "tutorial-closed.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  },
+  {
+    "file": "home.png",
+    "test": "NavigationTests/testCompleteTutorialAndCampaignWithRealMovement()"
+  }
+]

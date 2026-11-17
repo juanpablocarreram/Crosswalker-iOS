@@ -1,0 +1,12 @@
+{
+  "commit": "37d3fe9e08fae3589538ec78e2f4a5cca4403df5",
+  "branch": "experiment/nuevos-assets",
+  "sourceSHA256": "90a1352cf056e16cc2ed1dcdb057df113b599181583b89a5f34282995827fa99",
+  "traces": 339,
+  "samples": 4006,
+  "outcomes": {
+    "won": 131,
+    "retry": 208,
+    "running": 0
+  }
+}

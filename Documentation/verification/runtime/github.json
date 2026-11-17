@@ -1,0 +1,7 @@
+{
+  "checkedAt": "2026-11-17T19:06:13.673935+00:00",
+  "command": "git ls-remote origin refs/heads/experiment/nuevos-assets",
+  "repository": "https://github.com/Diego-Alberto-A/ADO.git",
+  "stdout": "37d3fe9e08fae3589538ec78e2f4a5cca4403df5\trefs/heads/experiment/nuevos-assets\n",
+  "head": "37d3fe9e08fae3589538ec78e2f4a5cca4403df5"
+}

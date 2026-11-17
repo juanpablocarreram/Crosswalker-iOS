@@ -2,69 +2,142 @@ import SwiftUI
 import UIKit
 
 struct ScreenTransitions: UIViewControllerRepresentable {
-    @ObservedObject var session: Session
-    func makeUIViewController(context: Context) -> TransitionController { TransitionController(session:session) }
-    func updateUIViewController(_ controller: TransitionController, context: Context) { }
+  @ObservedObject var session: Session
+  func makeUIViewController(context: Context) -> TransitionController {
+    TransitionController(session: session)
+  }
+  func updateUIViewController(_ controller: TransitionController, context: Context) {}
 }
 
 @MainActor final class TransitionController: UIViewController {
-    private let session: Session
-    private let host: UIHostingController<ScreenContent>
-    init(session: Session) {
-        self.session=session; host=UIHostingController(rootView:ScreenContent(session:session))
-        super.init(nibName:nil,bundle:nil)
+  private let session: Session
+  private let host: UIHostingController<ScreenContent>
+  private var openingSeen = false
+  private var openingCompletion: DispatchWorkItem?
+  init(session: Session) {
+    self.session = session
+    host = UIHostingController(rootView: ScreenContent(session: session))
+    super.init(nibName: nil, bundle: nil)
+  }
+  @available(*, unavailable)
+  required init?(coder: NSCoder) { nil }
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    addChild(host)
+    view.addSubview(host.view)
+    host.didMove(toParent: self)
+    host.view.backgroundColor = .clear
+    view.backgroundColor = UIColor(Palette.inkShadow)
+    session.transition = { [weak self] motion, action in self?.animate(motion, action: action) }
+  }
+  override func viewDidLayoutSubviews() {
+    super.viewDidLayoutSubviews()
+    host.view.frame = view.bounds
+  }
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    guard !openingSeen else { return }
+    openingSeen = true
+    guard session.screen == .home, !UIAccessibility.isReduceMotionEnabled else { return }
+    let center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
+    let radius = hypot(view.bounds.width, view.bounds.height) * 0.5
+    let mask = CAShapeLayer()
+    let from = UIBezierPath(ovalIn: CGRect(x: center.x, y: center.y, width: 0, height: 0)).cgPath
+    let to = UIBezierPath(
+      ovalIn: CGRect(
+        x: center.x - radius, y: center.y - radius, width: radius * 2, height: radius * 2)
+    ).cgPath
+    mask.path = to
+    host.view.layer.mask = mask
+    let animation = CABasicAnimation(keyPath: "path")
+    animation.fromValue = from
+    animation.toValue = to
+    animation.duration = PresentationTiming.openingIris
+    animation.timingFunction = CAMediaTimingFunction(controlPoints: 0.4, 0, 0.2, 1)
+    mask.add(animation, forKey: "openingIris")
+    let completion = DispatchWorkItem { [weak self] in self?.host.view.layer.mask = nil }
+    openingCompletion = completion
+    DispatchQueue.main.asyncAfter(
+      deadline: .now() + PresentationTiming.openingIris, execute: completion)
+  }
+
+  private func animate(_ motion: ScreenMotion, action: @escaping () -> Void) {
+    guard !session.transitioning else { return }
+    guard view.bounds.width > 0 else {
+      action()
+      return
     }
-    required init?(coder: NSCoder) { fatalError("Programmatic controller") }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        addChild(host); view.addSubview(host.view); host.didMove(toParent:self)
-        host.view.backgroundColor = .clear
-        session.transition = { [weak self] motion, action in self?.animate(motion,action:action) }
+    openingCompletion?.cancel()
+    openingCompletion = nil
+    host.view.layer.mask = nil
+    session.transitioning = true
+    let image = UIGraphicsImageRenderer(bounds: host.view.bounds).image { _ in
+      host.view.drawHierarchy(in: host.view.bounds, afterScreenUpdates: false)
     }
-    override func viewDidLayoutSubviews() { super.viewDidLayoutSubviews(); host.view.frame=view.bounds }
-    private func animate(_ motion: ScreenMotion, action: @escaping () -> Void) {
-        guard !session.transitioning else { return }
-        guard view.bounds.width > 0 else { action(); return }
-        session.transitioning=true
-        let image=UIGraphicsImageRenderer(bounds:host.view.bounds).image { _ in host.view.drawHierarchy(in:host.view.bounds,afterScreenUpdates:false) }
-        let previous=UIImageView(image:image); previous.frame=view.bounds; previous.isAccessibilityElement=false
-        view.addSubview(previous); host.view.accessibilityElementsHidden=true; view.isUserInteractionEnabled=false
-        action()
-        // A fresh root ensures the new SwiftUI screen is laid out before animation begins.
-        host.rootView=ScreenContent(session:session)
-        DispatchQueue.main.async { [self] in
-            host.view.setNeedsLayout(); host.view.layoutIfNeeded()
-            let duration = 0.7
-            let finish: () -> Void = { [self] in
-                previous.removeFromSuperview(); host.view.layer.mask=nil; host.view.transform = .identity
-                host.view.accessibilityElementsHidden=false; view.isUserInteractionEnabled=true; session.transitioning=false
-            }
-            if motion == .fade || UIAccessibility.isReduceMotionEnabled {
-                UIView.animate(withDuration: UIAccessibility.isReduceMotionEnabled ? 0.2 : duration) {
-                    previous.alpha = 0
-                } completion: { _ in finish() }
-            } else {
-                let closing = motion.backwards && session.screen != .home
-                let top = closing ? previous : host.view!
-                if !closing { view.bringSubviewToFront(host.view) }
-                let center=CGPoint(x:view.bounds.midX,y:view.bounds.midY)
-                let radius=hypot(view.bounds.width,view.bounds.height)*0.5
-                func circle(_ r: CGFloat) -> CGPath { UIBezierPath(ovalIn:CGRect(x:center.x-r,y:center.y-r,width:r*2,height:r*2)).cgPath }
-                let mask=CAShapeLayer(), rim=CAShapeLayer()
-                let from=circle(closing ? radius : 0.001), to=circle(closing ? 0.001 : radius)
-                mask.path=to; top.layer.mask=mask
-                rim.path=circle((closing ? 0.001 : radius)+4.5)
-                rim.fillColor=UIColor.clear.cgColor; rim.strokeColor=UIColor(red:245/255,green:230/255,blue:197/255,alpha:1).cgColor; rim.lineWidth=9
-                view.layer.addSublayer(rim)
-                let animation=CABasicAnimation(keyPath:"path"); animation.fromValue=from; animation.toValue=to; animation.duration=duration
-                animation.timingFunction=CAMediaTimingFunction(controlPoints:0.4,0,0.2,1)
-                mask.add(animation,forKey:"iris")
-                let rimAnimation=animation.copy() as! CABasicAnimation
-                rimAnimation.fromValue=circle((closing ? radius : 0.001)+4.5)
-                rimAnimation.toValue=rim.path
-                rim.add(rimAnimation,forKey:"iris")
-                DispatchQueue.main.asyncAfter(deadline:.now()+duration) { rim.removeFromSuperlayer(); finish() }
-            }
+    let previous = UIImageView(image: image)
+    previous.frame = view.bounds
+    previous.isAccessibilityElement = false
+    view.addSubview(previous)
+    host.view.accessibilityElementsHidden = true
+    view.isUserInteractionEnabled = false
+    action()
+    // A fresh root ensures the new SwiftUI screen is laid out before animation begins.
+    host.rootView = ScreenContent(session: session)
+    DispatchQueue.main.async { [self] in
+      host.view.setNeedsLayout()
+      host.view.layoutIfNeeded()
+      let duration = PresentationTiming.screenTransition
+      let finish: () -> Void = { [self] in
+        previous.removeFromSuperview()
+        host.view.layer.mask = nil
+        host.view.transform = .identity
+        host.view.accessibilityElementsHidden = false
+        view.isUserInteractionEnabled = true
+        session.transitioning = false
+      }
+      if motion == .fade || UIAccessibility.isReduceMotionEnabled {
+        UIView.animate(withDuration: UIAccessibility.isReduceMotionEnabled ? 0.2 : duration) {
+          previous.alpha = 0
+        } completion: { _ in
+          finish()
         }
+      } else {
+        let closing = motion.backwards && session.screen != .home
+        let top = closing ? previous : host.view!
+        if !closing { view.bringSubviewToFront(host.view) }
+        let center = CGPoint(x: view.bounds.midX, y: view.bounds.midY)
+        let radius = hypot(view.bounds.width, view.bounds.height) * 0.5
+        func circle(_ r: CGFloat) -> CGPath {
+          UIBezierPath(
+            ovalIn: CGRect(x: center.x - r, y: center.y - r, width: r * 2, height: r * 2)
+          ).cgPath
+        }
+        let mask = CAShapeLayer()
+        let rim = CAShapeLayer()
+        let from = circle(closing ? radius : 0.001)
+        let to = circle(closing ? 0.001 : radius)
+        mask.path = to
+        top.layer.mask = mask
+        rim.path = circle((closing ? 0.001 : radius) + 4.5)
+        rim.fillColor = UIColor.clear.cgColor
+        rim.strokeColor = UIColor(Palette.paper).cgColor
+        rim.lineWidth = 9
+        view.layer.addSublayer(rim)
+        let animation = CABasicAnimation(keyPath: "path")
+        animation.fromValue = from
+        animation.toValue = to
+        animation.duration = duration
+        animation.timingFunction = CAMediaTimingFunction(controlPoints: 0.4, 0, 0.2, 1)
+        mask.add(animation, forKey: "iris")
+        let rimAnimation = animation.copy() as! CABasicAnimation
+        rimAnimation.fromValue = circle((closing ? radius : 0.001) + 4.5)
+        rimAnimation.toValue = rim.path
+        rim.add(rimAnimation, forKey: "iris")
+        DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
+          rim.removeFromSuperlayer()
+          finish()
+        }
+      }
     }
+  }
 }

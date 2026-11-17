@@ -1,0 +1,669 @@
+{
+  "repository": "https://github.com/Diego-Alberto-A/ADO.git",
+  "branch": "experiment/nuevos-assets",
+  "commit": "37d3fe9e08fae3589538ec78e2f4a5cca4403df5",
+  "remoteFreshnessVerified": true,
+  "engineSHA256": "90a1352cf056e16cc2ed1dcdb057df113b599181583b89a5f34282995827fa99",
+  "resources": [
+    {
+      "source": "assets/game/res/drawable-nodpi/car_blue.webp",
+      "target": "Crosswalker/Assets.xcassets/car_blue.imageset/car_blue.png",
+      "kind": "image",
+      "sourceSHA256": "aeae10a34b07f7f1f4fed54bb61a37ce24e98606976e1e57c8422b5bd71b63f7",
+      "targetSHA256": "8b9d05e068ea08d88e1f67bd47c615c888ec6864d006946ab3369a4eac911d07"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/car_coral.webp",
+      "target": "Crosswalker/Assets.xcassets/car_coral.imageset/car_coral.png",
+      "kind": "image",
+      "sourceSHA256": "4d3999ffd3f20da0407c38772c9541c1154951f3911426aca187dff4e13524e3",
+      "targetSHA256": "cf030289f6d533406e34324bc37b53aac7e98fb461e7d1a0fe1bc00a93504732"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/car_green.webp",
+      "target": "Crosswalker/Assets.xcassets/car_green.imageset/car_green.png",
+      "kind": "image",
+      "sourceSHA256": "abd789e65bf216a65f053d6238df0b4b7f4fa58c2cc1cb3891605d46bc5cc69a",
+      "targetSHA256": "76b8016b534bd3d0a816ce3628ad26c6c1657111bb9f1751b360a735a6208678"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/car_yellow.webp",
+      "target": "Crosswalker/Assets.xcassets/car_yellow.imageset/car_yellow.png",
+      "kind": "image",
+      "sourceSHA256": "976de9b19e4ed6641878797d9fea1d33b14eea135abdf9d69308ea19fac0098e",
+      "targetSHA256": "04f3a815346d3ae9e78a1740790b415b98ac603a7d494d2d2ebb7ba6be4393eb"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/decor_bikerack_campus.webp",
+      "target": "Crosswalker/Assets.xcassets/decor_bikerack_campus.imageset/decor_bikerack_campus.png",
+      "kind": "image",
+      "sourceSHA256": "784f61276c714355fae1593b19e28c815046aff9f8ee101a0d2c728f65c1e77c",
+      "targetSHA256": "a612f4286b02c7b76f0417a2a863071eac494c34b067e4bc8322491047926bfd"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/decor_building_campus.webp",
+      "target": "Crosswalker/Assets.xcassets/decor_building_campus.imageset/decor_building_campus.png",
+      "kind": "image",
+      "sourceSHA256": "2e854b088763330726927a027f29bfbeea145bc96b658816747595cb95643daf",
+      "targetSHA256": "a3fb249a728900d4e1459ede7a6b4c1ca2d03aa9161d112eb9c96af1bec9889d"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/decor_building_city.webp",
+      "target": "Crosswalker/Assets.xcassets/decor_building_city.imageset/decor_building_city.png",
+      "kind": "image",
+      "sourceSHA256": "729da0972d98b2ffaca62dba39c896403a999e6123bd5df3b1b275a69324fad8",
+      "targetSHA256": "624008bbfa5a3d2153b047e83be126125acaf2daa3ace83c6858031bd80fd9da"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/decor_busstop_city.webp",
+      "target": "Crosswalker/Assets.xcassets/decor_busstop_city.imageset/decor_busstop_city.png",
+      "kind": "image",
+      "sourceSHA256": "1d841500c653b9a6d0d2a33eb42f6432f1d74c822b145fa2e15d97f467259889",
+      "targetSHA256": "6d9941dc91e67dca2f010b4f542e71046479f47234c13cc39f1f0143972e7c6a"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/decor_fence_barrio.webp",
+      "target": "Crosswalker/Assets.xcassets/decor_fence_barrio.imageset/decor_fence_barrio.png",
+      "kind": "image",
+      "sourceSHA256": "c8ca94cb416786ee14116e6a600a6f18105a7b9d3b574f196a3d2b3b565814ab",
+      "targetSHA256": "7d56e8c79b4aa2b52aaefbbc395c68cd979bf44442f08e1e56f0d9e362235334"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/decor_mailbox_barrio.webp",
+      "target": "Crosswalker/Assets.xcassets/decor_mailbox_barrio.imageset/decor_mailbox_barrio.png",
+      "kind": "image",
+      "sourceSHA256": "3e5c96bd699358b4b1ed67c4829de653b2769e64f83ee8e50f56370ab5f4ab5c",
+      "targetSHA256": "b24bd69fcdf6eacfeb2fee340f00010986bf977c14294d9a420f48d661981706"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/fundacion_ado.png",
+      "target": "Crosswalker/Assets.xcassets/fundacion_ado.imageset/fundacion_ado.png",
+      "kind": "image",
+      "sourceSHA256": "7b49e6472efd0d1b1d2fca0a92519199fc47732d88824d7612faf617139c3b75",
+      "targetSHA256": "7b49e6472efd0d1b1d2fca0a92519199fc47732d88824d7612faf617139c3b75"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/ground_crosswalk.webp",
+      "target": "Crosswalker/Assets.xcassets/ground_crosswalk.imageset/ground_crosswalk.png",
+      "kind": "image",
+      "sourceSHA256": "d69dce7f17775f571ec6cd451e34444ed6f1257d8a31d6f1991ec15764249a4c",
+      "targetSHA256": "2fc1e79735b18b99bbddb0d8379e8ea73821a2b478ddc06d29a6643974c0b6db"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/ground_grass.webp",
+      "target": "Crosswalker/Assets.xcassets/ground_grass.imageset/ground_grass.png",
+      "kind": "image",
+      "sourceSHA256": "7ca2fb2795c636db4ce5ee598688a36a652b37a0566f49184b6b1d2652e85b71",
+      "targetSHA256": "88d9f9007c1bf519f1773e0751fdf2b837809c851e3d326e2a1aba81b5be95da"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/ground_lane_line.webp",
+      "target": "Crosswalker/Assets.xcassets/ground_lane_line.imageset/ground_lane_line.png",
+      "kind": "image",
+      "sourceSHA256": "9abf4115ffe70a4659cb42b4a9c9a43232fc3ec56017116ff64b23c23cc8e8f8",
+      "targetSHA256": "c30d96856f036a7616cb77e92b4591ab1223a9918358fbbba854ee7c0666479b"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/ground_road.webp",
+      "target": "Crosswalker/Assets.xcassets/ground_road.imageset/ground_road.png",
+      "kind": "image",
+      "sourceSHA256": "52cd07dd7ba2ba58a5219d7c64607aa9ecc64ee158eef8dd44be4bb074f627d8",
+      "targetSHA256": "6f54f033d93a348bf7650135e4710057a9aff03d2ae34719d30e7de61c9743d9"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/ground_walk.webp",
+      "target": "Crosswalker/Assets.xcassets/ground_walk.imageset/ground_walk.png",
+      "kind": "image",
+      "sourceSHA256": "9be02dfb2fc5c9564695dc0871f20bed2d88f2f4370dd5ce3d566789666e24fd",
+      "targetSHA256": "1a605a60c5fc616fb3c75c49370c1beca935e1d26be6b093789d79ef3b77ce1f"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/headphones.webp",
+      "target": "Crosswalker/Assets.xcassets/headphones.imageset/headphones.png",
+      "kind": "image",
+      "sourceSHA256": "5142c6be196edb4334120b537c23e41080d19dc669907f0b07495427c2b7c6a2",
+      "targetSHA256": "e61803fb8a99c57d012888803c7477e58e1b56c79a36b60cd80ceceabc851100"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/home_diorama.webp",
+      "target": "Crosswalker/Assets.xcassets/home_diorama.imageset/home_diorama.png",
+      "kind": "image",
+      "sourceSHA256": "a00b4e4a180751c38a6a97f8a9386d1e8262e3962b454c519099ecba00468db3",
+      "targetSHA256": "490e6532b5e5b0dc9bf14f8688aa3cbb2beb332d0e0285183949fc698a2a28bb"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/house.webp",
+      "target": "Crosswalker/Assets.xcassets/house.imageset/house.png",
+      "kind": "image",
+      "sourceSHA256": "9b733efbe306d53b2deeed48314157561158ecb0c316f566daecf6b7ad86d613",
+      "targetSHA256": "6f3ebe18fbf4416db397182ed357afb5abf921de2a10b1dfca8094b5fd6605ef"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/icon_bump.webp",
+      "target": "Crosswalker/Assets.xcassets/icon_bump.imageset/icon_bump.png",
+      "kind": "image",
+      "sourceSHA256": "06b6a8f323d69e2ca74acdc4060dd69e2a5e32bc4f91d8ccf43f3b7195c879a1",
+      "targetSHA256": "c792ea206117c5da026d010520d1e5c9648f5a3909c91b0f7f6ae9dfe112cea9"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/icon_crosswalk.webp",
+      "target": "Crosswalker/Assets.xcassets/icon_crosswalk.imageset/icon_crosswalk.png",
+      "kind": "image",
+      "sourceSHA256": "39194136faaf502e2d7089ca1b99e9aaaa004d641d1dab16f8849bdb2ab394ad",
+      "targetSHA256": "8c931d73a6a68b557f8f571309654164ee5168f6e7a3252a09a024505b2ceec3"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/icon_escort.webp",
+      "target": "Crosswalker/Assets.xcassets/icon_escort.imageset/icon_escort.png",
+      "kind": "image",
+      "sourceSHA256": "aa57a35edc360ab0e7b6860077fc617b00e03d762ef79fe72db5499e7753fcd0",
+      "targetSHA256": "f0156f4fff1d4918bc5e3216196b2a23994e934033736f8dc8c8ffe584107c3f"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/icon_headlights.webp",
+      "target": "Crosswalker/Assets.xcassets/icon_headlights.imageset/icon_headlights.png",
+      "kind": "image",
+      "sourceSHA256": "b2604bc6d740cf36ff20a0f77858fe67d7da21a7d25b3e14d50d04891c20ab91",
+      "targetSHA256": "0dac0459153147c4e5a2fa766a3bf6a342eba383282f2243009100c33b3977a8"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/icon_headphones_off.webp",
+      "target": "Crosswalker/Assets.xcassets/icon_headphones_off.imageset/icon_headphones_off.png",
+      "kind": "image",
+      "sourceSHA256": "5b751e1c9362c2cda2d12489df0ceba78296780e20458b334f53d643fe7eecdf",
+      "targetSHA256": "4347eaf7db5b27194ad1bdbfb49dbddc454f4c45f00678424a6009e04a23ed90"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/icon_island.webp",
+      "target": "Crosswalker/Assets.xcassets/icon_island.imageset/icon_island.png",
+      "kind": "image",
+      "sourceSHA256": "2f242dd2dd2a2e93d715c242633280681dab1a05dae6ebc366d29557ac01632e",
+      "targetSHA256": "ee39197edad8c393b6ea658f0a9890a2b1c79802b3e1cc3cd2a06934cab1b701"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/icon_look.webp",
+      "target": "Crosswalker/Assets.xcassets/icon_look.imageset/icon_look.png",
+      "kind": "image",
+      "sourceSHA256": "7e29d9b0e69db535ba0f459046094ca6cbc907fd46e2253a6e1f5c8875ae0d0b",
+      "targetSHA256": "255704487db3436ec57167553ffc05ae018972b70fff992299415d46f36bca20"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/icon_officer.webp",
+      "target": "Crosswalker/Assets.xcassets/icon_officer.imageset/icon_officer.png",
+      "kind": "image",
+      "sourceSHA256": "cdd88a7cdccd3783ef5ecfc698b0dc5bc55eee6efb02e1367ceb615fb5f9b704",
+      "targetSHA256": "135d90347cf8b6f61d6efd3a39b842b6451dd8e90e30a700e137e121dbe926cb"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/icon_phone_away.webp",
+      "target": "Crosswalker/Assets.xcassets/icon_phone_away.imageset/icon_phone_away.png",
+      "kind": "image",
+      "sourceSHA256": "652148d94f06927fc8316f992cb3678c282a5e8577423b30a10cc8adf79198f8",
+      "targetSHA256": "b6971c0098f93af45c5bc7b9910dc6eafec63064727ce2bccbcfeb54c24bcc19"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/icon_reflector.webp",
+      "target": "Crosswalker/Assets.xcassets/icon_reflector.imageset/icon_reflector.png",
+      "kind": "image",
+      "sourceSHA256": "e77aac82ec283fc242d3bbc72ee88ebfcc53c7207602266669eaf1b8c5755088",
+      "targetSHA256": "e25ae3fe90bcf04de3c16699ba2f589fb0262ffe95e36311725ccbe61833e003"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/icon_signal.webp",
+      "target": "Crosswalker/Assets.xcassets/icon_signal.imageset/icon_signal.png",
+      "kind": "image",
+      "sourceSHA256": "f051b35853efc5f844341e87ae2ed4b2b606e45e32dbb2655342214551c9698c",
+      "targetSHA256": "5ed0e56298d439e9d3ba42f0e40c6770054301c02df676dd96dbbf31a95fd7dc"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/icon_streetlamp.webp",
+      "target": "Crosswalker/Assets.xcassets/icon_streetlamp.imageset/icon_streetlamp.png",
+      "kind": "image",
+      "sourceSHA256": "afbdc0c87c8efb597913a4c232c4694f42d53d33e738d06819530c3efe951836",
+      "targetSHA256": "9cfbeba1897027c3df90739273dda1944ce4008da129001fbc261f50c5e67c1d"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/icon_wait.webp",
+      "target": "Crosswalker/Assets.xcassets/icon_wait.imageset/icon_wait.png",
+      "kind": "image",
+      "sourceSHA256": "73a9d10036af937a74226cd24ab4bfccb8fd7248504e324f11df238829faaf2d",
+      "targetSHA256": "e2ce38fdec675849db543331e496a9328557f2262e9a5abbce16ee3bd4b1ad28"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/material_cream.webp",
+      "target": "Crosswalker/Assets.xcassets/material_cream.imageset/material_cream.png",
+      "kind": "image",
+      "sourceSHA256": "2812f6afd1b9df6dca6eb5c1006ae18ea1d61fca65f2fb7de0a9842523d01e8f",
+      "targetSHA256": "532b7b5999d1e9da8f0f7080f6e1b91a97a97acb3c0dc6f434203cbca3dddc59"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/material_felt.webp",
+      "target": "Crosswalker/Assets.xcassets/material_felt.imageset/material_felt.png",
+      "kind": "image",
+      "sourceSHA256": "72434a67c1cf8b53112d161e22321eab3937ad93eeb84d5b580e9461a998e701",
+      "targetSHA256": "589de861fba107995e4f067ad5662ee2b73cabcccec3572c235be1f9523fbfac"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/material_kraft.webp",
+      "target": "Crosswalker/Assets.xcassets/material_kraft.imageset/material_kraft.png",
+      "kind": "image",
+      "sourceSHA256": "a2289902d4557d8f2e4dff9d6ef3c0aad9f6e9bca86414175ef61d804a261096",
+      "targetSHA256": "5d7d417d8e52529b303cc7c0779b1f283033b282c96e616008cd309e929761b1"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/material_road.webp",
+      "target": "Crosswalker/Assets.xcassets/material_road.imageset/material_road.png",
+      "kind": "image",
+      "sourceSHA256": "a19326bfa311ad2f52bb1491555e9e12b2e9d2b2aacdc6f542032b7d78821161",
+      "targetSHA256": "5bc1596410adf2184d6371f9db7e0ca3fec651661114fa82188abe984dbe19da"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/obstacle_barricade_barrio.webp",
+      "target": "Crosswalker/Assets.xcassets/obstacle_barricade_barrio.imageset/obstacle_barricade_barrio.png",
+      "kind": "image",
+      "sourceSHA256": "db16d5c239cd68cab6070954752d3f693b064977b0150fff7ebe244141c0c53f",
+      "targetSHA256": "7bf38e46626417f491297aef5ac3f7c97378ee0493e55c6a554a96a099d91b35"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/obstacle_cone_campus.webp",
+      "target": "Crosswalker/Assets.xcassets/obstacle_cone_campus.imageset/obstacle_cone_campus.png",
+      "kind": "image",
+      "sourceSHA256": "14962c178a742eced54781df6dbdf5f955d282f84df587db981ecea8479d6b00",
+      "targetSHA256": "31d44bc9841460c3726b6a732616e0c4dc87f5c2ca3bf2d164f0c418b9f596cf"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/phone.webp",
+      "target": "Crosswalker/Assets.xcassets/phone.imageset/phone.png",
+      "kind": "image",
+      "sourceSHA256": "0d259b826e44c201f294b57a1697fc40d695fa94f082f784917eb0ff4c0b8e71",
+      "targetSHA256": "5d9a346e576cd55f553952a84947bb30ebcbe3676ca9e347a1986d4ebde590d5"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/pointer_hand.webp",
+      "target": "Crosswalker/Assets.xcassets/pointer_hand.imageset/pointer_hand.png",
+      "kind": "image",
+      "sourceSHA256": "688daba950e966c767104614d5248ff8ee1edcad8370b8441ec6bd4cc2233a19",
+      "targetSHA256": "261c9ae4dd0992e311e39e632e5d10fce25d7a17e158330179f6ec0ae4d2353d"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/ramp.webp",
+      "target": "Crosswalker/Assets.xcassets/ramp.imageset/ramp.png",
+      "kind": "image",
+      "sourceSHA256": "3498759daab9fb0e8aa9cdf20e4cec8f9454e0a9538c81edd3b8ca8f933b9abb",
+      "targetSHA256": "9ba203a571959d1330b792aa4202b7e4d6330546cdf80d917e47f1f5324a09f9"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/star.webp",
+      "target": "Crosswalker/Assets.xcassets/star.imageset/star.png",
+      "kind": "image",
+      "sourceSHA256": "d1684c6259f340d07eae7acc3a8f7d8cfeae958f5afe3569f8c8403b49f993d9",
+      "targetSHA256": "65b0be1f67a7e0d23d61390b1430c06498884c23563304020615b8093b95e81d"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/stop_sign.webp",
+      "target": "Crosswalker/Assets.xcassets/stop_sign.imageset/stop_sign.png",
+      "kind": "image",
+      "sourceSHA256": "b562c087c4fc4acfd3b8adccc8735d5ac0e1d668e3974e5ee8d9a3e6a5cbf0e5",
+      "targetSHA256": "ea11d41ecd3261fb5780d24419fbc5bd5e2024754ed759cb4eba5ba6e3e1839a"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/traffic_light.webp",
+      "target": "Crosswalker/Assets.xcassets/traffic_light.imageset/traffic_light.png",
+      "kind": "image",
+      "sourceSHA256": "f051b35853efc5f844341e87ae2ed4b2b606e45e32dbb2655342214551c9698c",
+      "targetSHA256": "5ed0e56298d439e9d3ba42f0e40c6770054301c02df676dd96dbbf31a95fd7dc"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/tree.webp",
+      "target": "Crosswalker/Assets.xcassets/tree.imageset/tree.png",
+      "kind": "image",
+      "sourceSHA256": "32a62e80d468ee40c9b7523bd97231237eb9092144c06d74a09b23987a51d922",
+      "targetSHA256": "cc73a3f596726e09dbdae3c104d3653ac662fec8cb192e4f71e362bc950e5d42"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/tree_autumn.webp",
+      "target": "Crosswalker/Assets.xcassets/tree_autumn.imageset/tree_autumn.png",
+      "kind": "image",
+      "sourceSHA256": "16cc255698a6675bbb3810dcf3ddb72fcef8ecffa4fbd05be386a4da9f463187",
+      "targetSHA256": "fc254c7c3cd2a0e4dfc6a44bb618faafac2157c4fbb1c62ef861b45a42ad93b0"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_blue.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_blue.imageset/walker_blue.png",
+      "kind": "image",
+      "sourceSHA256": "3d382eafd1e5df83d1262996978e96f01b5ac6d23063a9a378bddeb051bd0d5a",
+      "targetSHA256": "066ef0c5f46430f64ecba34b9b388eb00f7c074d9c150b9f09fc6801d37f2f54"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_blue_w0.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_blue_w0.imageset/walker_blue_w0.png",
+      "kind": "image",
+      "sourceSHA256": "733df205f553e34a7a7eee0d24d83933f6d1ec36454a7e0d525d4dad0ebdc50d",
+      "targetSHA256": "93cad2d445378fbb4329c2ac1774fb788f851833b8c07fb9962c3e506b0af874"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_blue_w1.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_blue_w1.imageset/walker_blue_w1.png",
+      "kind": "image",
+      "sourceSHA256": "feb3d9849fe6d4f0287a4cc00c2a31cea9d401e11bc1e5deea33240d835eb76c",
+      "targetSHA256": "8989d9a462cbf69a3146ded58ebc89fe2629a68a072fb7445820b5540ba1866d"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_blue_w2.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_blue_w2.imageset/walker_blue_w2.png",
+      "kind": "image",
+      "sourceSHA256": "f5d6b2718464889b296bb3e3e5f6f53f53b5cfadb09d58a58515b14d0cebcfcc",
+      "targetSHA256": "7bf398375b46622ac3bd3293b7353e5748a97e0d5910c30998e0e1bb95add003"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_chair.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_chair.imageset/walker_chair.png",
+      "kind": "image",
+      "sourceSHA256": "69ce20f412f3209a8311ac1939565a4daf670fbd8105dc20b3c3af23a39683f9",
+      "targetSHA256": "6d1d10021414252742eb7447822542d79dd64df2c9b88f65fedaeab04f6a6542"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_chair_w0.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_chair_w0.imageset/walker_chair_w0.png",
+      "kind": "image",
+      "sourceSHA256": "942174ac61e04ff372a48325284666b60891f3ab941fb32672399e471d5ecb94",
+      "targetSHA256": "dd7ccd4dc1f541a85eb982530a4aa531ba10f0a9f66ce7857427b2b2934991d9"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_chair_w1.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_chair_w1.imageset/walker_chair_w1.png",
+      "kind": "image",
+      "sourceSHA256": "260e4b23bab0f141195d2cc23f31818debdb7b57ea7fa09ebf662de066d5ebe0",
+      "targetSHA256": "ae680f9a29cb8c2616e21278c9ff80187ad1045693406fa482526463bf054623"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_chair_w2.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_chair_w2.imageset/walker_chair_w2.png",
+      "kind": "image",
+      "sourceSHA256": "e3189b97b184bbea4ee3c7ef8063b4d2ca1701a39c3a733bbebda94518fa37aa",
+      "targetSHA256": "47a1f98185297f5ad549e6018645386a7317695bd71c0ac8336a5e13d0ceda7d"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_coral.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_coral.imageset/walker_coral.png",
+      "kind": "image",
+      "sourceSHA256": "f90717a8b32e91c040827d83aa9b332ca125b549be53bb767cf7332105baad61",
+      "targetSHA256": "eb1d7f2684dec56a71fe7eedf6e637a21fb42292199cc48900bc04306fd76977"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_coral_w0.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_coral_w0.imageset/walker_coral_w0.png",
+      "kind": "image",
+      "sourceSHA256": "74a427d9932298c0126a5c5239ccce771de6870fe4c434f96a01d2e3fd5c91ff",
+      "targetSHA256": "39e3960125a0bbd7347655278610d72c4af9358bac20e52a5aea6ac28e486d80"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_coral_w1.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_coral_w1.imageset/walker_coral_w1.png",
+      "kind": "image",
+      "sourceSHA256": "a00b2347dc90f9a7b399efe000ddf5349c513c1a496026b4eaf4b3c201c3b07c",
+      "targetSHA256": "36f64677f45e10690fac48275c74375c4ecb835bb15a6d61d9f03ca69a00b3e6"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_coral_w2.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_coral_w2.imageset/walker_coral_w2.png",
+      "kind": "image",
+      "sourceSHA256": "202296bf5dea59ef2444868b995f0264b8876c47840fea29c2d75ce726f2e630",
+      "targetSHA256": "3c8f57c6022f0ecd9d7577b97cd234b454de4b8a0b68b2b90a5475bbb01ce387"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_green.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_green.imageset/walker_green.png",
+      "kind": "image",
+      "sourceSHA256": "289549c522ca714ea480475e52ce81b02927f5511369e4861c9ff7392ba2e4fb",
+      "targetSHA256": "3b48df0966c40282e84cd0182669c8911c984baf08e3c28de070bd4eb1cc5fd1"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_green_w0.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_green_w0.imageset/walker_green_w0.png",
+      "kind": "image",
+      "sourceSHA256": "e163bcccef0bad82c959337cf7e1bcfbe539c571e86690f47ae618e46a6cec06",
+      "targetSHA256": "86287c8e97768b42db04d9b6831316281cc6808d36527693574ee443b6551c95"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_green_w1.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_green_w1.imageset/walker_green_w1.png",
+      "kind": "image",
+      "sourceSHA256": "6f32eb190700dd164182ca380495bac427271fce7c94c8c1e1c0b249758de908",
+      "targetSHA256": "358cc59e7aa00647bd7ba1ad679a7b7e6422bbfc2e6ef1daddc53ee097436dfd"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_green_w2.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_green_w2.imageset/walker_green_w2.png",
+      "kind": "image",
+      "sourceSHA256": "bf020775fd13956aec9bec0298085bd20ae1705abdadfe0dd38360a28a182beb",
+      "targetSHA256": "6c379829b4d831d3f9c3f7888fe54b85b9658a7f42425a0dfac228bf040ab75a"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_rust.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_rust.imageset/walker_rust.png",
+      "kind": "image",
+      "sourceSHA256": "179b47ca0c17e2efc5b0260cab723b23174692c360b148fe1c66c8a5042be326",
+      "targetSHA256": "d169b7c838c70942940cf35437e4ac7a2480936c25b607fc92b184f985b585e3"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_rust_w0.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_rust_w0.imageset/walker_rust_w0.png",
+      "kind": "image",
+      "sourceSHA256": "7e08f01fda56562f7cca3539e1a638e5ad7d588aa13a5abf12e781ac22a2a042",
+      "targetSHA256": "9737c0533223c7f56ebcc63d3863600753ec10e163c7cead4a4b9e8935c46ece"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_rust_w1.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_rust_w1.imageset/walker_rust_w1.png",
+      "kind": "image",
+      "sourceSHA256": "4097b9e8a99b5b023d6a304bbccc8bc69fdda34e99fafdfc7737acde2ea58c18",
+      "targetSHA256": "513734ae339d2a296d066c3179331b5c8a291d2e68b8eb794681b56c75e4b2ee"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_rust_w2.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_rust_w2.imageset/walker_rust_w2.png",
+      "kind": "image",
+      "sourceSHA256": "22ab86648b7149a4045bc646bea5cf820da7e89dbdd36aac71ec94cd887bd994",
+      "targetSHA256": "fddb472830426aac8df1edfb9e694c575e96aeca0b15815e0ef0adeead0973ff"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_slate.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_slate.imageset/walker_slate.png",
+      "kind": "image",
+      "sourceSHA256": "1d03ec2b291a6bc3cc92536ad138d08ce49e5e96c387b8719f8e82670ca133f5",
+      "targetSHA256": "dde4119fdefb5f6f41756568e024202568b4878d0f85a6441d98f74379f10569"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_slate_w0.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_slate_w0.imageset/walker_slate_w0.png",
+      "kind": "image",
+      "sourceSHA256": "b643ab388de9d1b86bfb7321050b0f926abc8a4ba662fe1092db0e9f6e22c947",
+      "targetSHA256": "cb3f3952c83c2a492f6e1582942d137cb5feefb1ad253a6efe092e58ee210451"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_slate_w1.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_slate_w1.imageset/walker_slate_w1.png",
+      "kind": "image",
+      "sourceSHA256": "36bce20fe32686eaaa2d9c8541578aea474b2dc2ea4045720dbbfbaf63e1f448",
+      "targetSHA256": "e2d66e4396f9dbb6cea8d5513742b0be127080249d0269f722b4e8e105fc22fb"
+    },
+    {
+      "source": "assets/game/res/drawable-nodpi/walker_slate_w2.webp",
+      "target": "Crosswalker/Assets.xcassets/walker_slate_w2.imageset/walker_slate_w2.png",
+      "kind": "image",
+      "sourceSHA256": "ed296fbd6d4b4b9b2693c8bc8723b2304fc45b6d4cb5136fa63d8d212be659f7",
+      "targetSHA256": "ed8884da7012eff69f0ed9a6e320a382d4fdd987854e7838389f79c782858954"
+    },
+    {
+      "source": "assets/game/res/font/jersey_10.ttf",
+      "target": "Crosswalker/Resources/jersey_10.ttf",
+      "kind": "copy",
+      "sourceSHA256": "db9cbd091617048a145d249daa2b815fe7083be6ab66ac26626e21a4e01c3e82",
+      "targetSHA256": "db9cbd091617048a145d249daa2b815fe7083be6ab66ac26626e21a4e01c3e82"
+    },
+    {
+      "source": "assets/game/res/font/jersey_25.ttf",
+      "target": "Crosswalker/Resources/jersey_25.ttf",
+      "kind": "copy",
+      "sourceSHA256": "4d4acdd89a748e9548041a3046d95536c500e1a7be9197c6aeef7d980f79d370",
+      "targetSHA256": "4d4acdd89a748e9548041a3046d95536c500e1a7be9197c6aeef7d980f79d370"
+    },
+    {
+      "source": "assets/game/res/font/pixelify_sans.ttf",
+      "target": "Crosswalker/Resources/pixelify_sans.ttf",
+      "kind": "copy",
+      "sourceSHA256": "9ba86cd010a4de309d263ceff8e8044092c9db7efda869620cb9ff1c4389e8a5",
+      "targetSHA256": "9ba86cd010a4de309d263ceff8e8044092c9db7efda869620cb9ff1c4389e8a5"
+    },
+    {
+      "source": "assets/game/res/font/silkscreen.ttf",
+      "target": "Crosswalker/Resources/silkscreen.ttf",
+      "kind": "copy",
+      "sourceSHA256": "c845473330b94c2079ce9af01c51ac8ba2d99c24f4d14c039843bbb8e642ebd8",
+      "targetSHA256": "c845473330b94c2079ce9af01c51ac8ba2d99c24f4d14c039843bbb8e642ebd8"
+    },
+    {
+      "source": "assets/game/res/font/silkscreen_bold.ttf",
+      "target": "Crosswalker/Resources/silkscreen_bold.ttf",
+      "kind": "copy",
+      "sourceSHA256": "768476aa712d4f5c3e18d3bce80f980a8bd3f72b7094d22ec5e768df3acfed61",
+      "targetSHA256": "768476aa712d4f5c3e18d3bce80f980a8bd3f72b7094d22ec5e768df3acfed61"
+    },
+    {
+      "source": "assets/game/files/licenses/Jersey10-OFL.txt",
+      "target": "Crosswalker/Resources/Jersey10-OFL.txt",
+      "kind": "copy",
+      "sourceSHA256": "436d5836064cec796c7ddde6fb4faeabdb6f2f17443a24a30d0c38b75d13f922",
+      "targetSHA256": "436d5836064cec796c7ddde6fb4faeabdb6f2f17443a24a30d0c38b75d13f922"
+    },
+    {
+      "source": "assets/game/files/licenses/Jersey25-OFL.txt",
+      "target": "Crosswalker/Resources/Jersey25-OFL.txt",
+      "kind": "copy",
+      "sourceSHA256": "436d5836064cec796c7ddde6fb4faeabdb6f2f17443a24a30d0c38b75d13f922",
+      "targetSHA256": "436d5836064cec796c7ddde6fb4faeabdb6f2f17443a24a30d0c38b75d13f922"
+    },
+    {
+      "source": "assets/game/files/licenses/LPC-Elders-OGA-BY-3.0.txt",
+      "target": "Crosswalker/Resources/LPC-Elders-OGA-BY-3.0.txt",
+      "kind": "copy",
+      "sourceSHA256": "e33f605448aead6af7dd888beb03e2fe32a8a4cfd5035d1533682949b5f0280e",
+      "targetSHA256": "e33f605448aead6af7dd888beb03e2fe32a8a4cfd5035d1533682949b5f0280e"
+    },
+    {
+      "source": "assets/game/files/licenses/PixelifySans-OFL.txt",
+      "target": "Crosswalker/Resources/PixelifySans-OFL.txt",
+      "kind": "copy",
+      "sourceSHA256": "b66ba46f511a851ab09998b5a5a9fdbb102545a3864cb993095e1745996873a7",
+      "targetSHA256": "b66ba46f511a851ab09998b5a5a9fdbb102545a3864cb993095e1745996873a7"
+    },
+    {
+      "source": "assets/game/files/licenses/Silkscreen-OFL.txt",
+      "target": "Crosswalker/Resources/Silkscreen-OFL.txt",
+      "kind": "copy",
+      "sourceSHA256": "86c5e9c9382cdcc5948704fdfe60f2aa164a719746931219a42736ecd9cefbd3",
+      "targetSHA256": "86c5e9c9382cdcc5948704fdfe60f2aa164a719746931219a42736ecd9cefbd3"
+    },
+    {
+      "source": "assets/game/files/licenses/audio-credits.txt",
+      "target": "Crosswalker/Resources/audio-credits.txt",
+      "kind": "copy",
+      "sourceSHA256": "002c9a6df982c66a741958cf3e165fa589db93b9a44ba47294e95711c50f6cfe",
+      "targetSHA256": "002c9a6df982c66a741958cf3e165fa589db93b9a44ba47294e95711c50f6cfe"
+    },
+    {
+      "source": "assets/game/files/campaign.json",
+      "target": "Crosswalker/Resources/campaign.json",
+      "kind": "copy",
+      "sourceSHA256": "80e8abad85d32ad8b57a0e418ca39ba13665ad44ae8fbe56575f8cd24e06d949",
+      "targetSHA256": "80e8abad85d32ad8b57a0e418ca39ba13665ad44ae8fbe56575f8cd24e06d949"
+    },
+    {
+      "source": "assets/game/res/raw/end_song.mp3",
+      "target": "Crosswalker/Resources/end_song.mp3",
+      "kind": "copy",
+      "sourceSHA256": "79f92cd980b557a8fa1743d82560e1d2a9b0afff7d80e5f6cdcfa2545674c0e2",
+      "targetSHA256": "79f92cd980b557a8fa1743d82560e1d2a9b0afff7d80e5f6cdcfa2545674c0e2"
+    },
+    {
+      "source": "assets/game/res/raw/music_gameover.mp3",
+      "target": "Crosswalker/Resources/music_gameover.mp3",
+      "kind": "copy",
+      "sourceSHA256": "87aa24f0e20b5c0b503bf0db75091c853122a0a8d1b381ea9eb54382aad6e3a6",
+      "targetSHA256": "87aa24f0e20b5c0b503bf0db75091c853122a0a8d1b381ea9eb54382aad6e3a6"
+    },
+    {
+      "source": "assets/game/res/raw/music_menu.ogg",
+      "target": "Crosswalker/Resources/music_menu.wav",
+      "kind": "ogg-to-lossless-pcm",
+      "sourceSHA256": "3e482fcdff3213ca4b6c50097abcf16384713babd829bd9fa1e14b8fa9434b42",
+      "targetSHA256": "282d95f6592760ca55aa8e679e5437bc33f3ded14c477041704719636de01b20"
+    },
+    {
+      "source": "assets/game/res/raw/music_win.mp3",
+      "target": "Crosswalker/Resources/music_win.mp3",
+      "kind": "copy",
+      "sourceSHA256": "4cc93f3ce7d79bdc4d145522a21e186eb5084e0cf2b2a284f0c1d25a9f776470",
+      "targetSHA256": "4cc93f3ce7d79bdc4d145522a21e186eb5084e0cf2b2a284f0c1d25a9f776470"
+    },
+    {
+      "source": "assets/game/res/raw/music_world1.mp3",
+      "target": "Crosswalker/Resources/music_world1.mp3",
+      "kind": "copy",
+      "sourceSHA256": "8c7b6db9dd571cb1ec6eea6c7b035f2c0541c37d95d10f868bc38fe87eff6d8d",
+      "targetSHA256": "8c7b6db9dd571cb1ec6eea6c7b035f2c0541c37d95d10f868bc38fe87eff6d8d"
+    },
+    {
+      "source": "assets/game/res/raw/music_world2.mp3",
+      "target": "Crosswalker/Resources/music_world2.mp3",
+      "kind": "copy",
+      "sourceSHA256": "b1062ac8b941900801b67f3dd73575507e617b9d763b206d87577910de4f0a80",
+      "targetSHA256": "b1062ac8b941900801b67f3dd73575507e617b9d763b206d87577910de4f0a80"
+    },
+    {
+      "source": "assets/game/res/raw/music_world3.mp3",
+      "target": "Crosswalker/Resources/music_world3.mp3",
+      "kind": "copy",
+      "sourceSHA256": "0462f8989122d7e4fa4439df3194d77813aec15b76dd8153ea2be950f14b5698",
+      "targetSHA256": "0462f8989122d7e4fa4439df3194d77813aec15b76dd8153ea2be950f14b5698"
+    },
+    {
+      "source": "assets/game/res/raw/rain.ogg",
+      "target": "Crosswalker/Resources/rain.wav",
+      "kind": "ogg-to-lossless-pcm",
+      "sourceSHA256": "115c233f9f8bc793f12723030aaae6cfda923e565c32a8e54bb274b2a8199ee1",
+      "targetSHA256": "a11fcd15b65882495ce27a39e9ae66fe958da0fd4cf0fd9a8d09a8bef71ca69f"
+    },
+    {
+      "source": "assets/game/res/raw/sfx_button.mp3",
+      "target": "Crosswalker/Resources/sfx_button.mp3",
+      "kind": "copy",
+      "sourceSHA256": "55b165f1085f84e3e71ff9fc64bc0247972bea36ff8f083dcab73b28f54a508c",
+      "targetSHA256": "55b165f1085f84e3e71ff9fc64bc0247972bea36ff8f083dcab73b28f54a508c"
+    },
+    {
+      "source": "assets/game/res/raw/sfx_collapse.wav",
+      "target": "Crosswalker/Resources/sfx_collapse.wav",
+      "kind": "copy",
+      "sourceSHA256": "d7ef62ced7d5d9644209cee908742cf318ec420b8d736f3ef36888df8ad27e77",
+      "targetSHA256": "d7ef62ced7d5d9644209cee908742cf318ec420b8d736f3ef36888df8ad27e77"
+    },
+    {
+      "source": "assets/game/res/raw/sfx_enter_level.mp3",
+      "target": "Crosswalker/Resources/sfx_enter_level.mp3",
+      "kind": "copy",
+      "sourceSHA256": "f7af9d70221dc8f851cdb3f2a1021c3a2aaac04f8aabc53d29cb425787880ebc",
+      "targetSHA256": "f7af9d70221dc8f851cdb3f2a1021c3a2aaac04f8aabc53d29cb425787880ebc"
+    },
+    {
+      "source": "assets/game/res/raw/voice_talking.mp3",
+      "target": "Crosswalker/Resources/voice_talking.mp3",
+      "kind": "copy",
+      "sourceSHA256": "afad8a51efa521762530ea72e67595e02f4b044d909852469f3a024091694cae",
+      "targetSHA256": "afad8a51efa521762530ea72e67595e02f4b044d909852469f3a024091694cae"
+    }
+  ],
+  "remoteCheckedAt": "2026-11-17T19:06:13.673935+00:00",
+  "remoteHead": "37d3fe9e08fae3589538ec78e2f4a5cca4403df5"
+}

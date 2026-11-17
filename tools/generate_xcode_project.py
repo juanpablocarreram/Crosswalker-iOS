@@ -53,6 +53,7 @@ for name,sources,resource_paths,product_type in [('Crosswalker',app_sources,reso
     if is_app: settings.update({'INFOPLIST_FILE':'Crosswalker/Info.plist','ASSETCATALOG_COMPILER_APPICON_NAME':'AppIcon'})
     elif product_type == 'bundle.unit-test': settings.update({'TEST_HOST':'$(BUILT_PRODUCTS_DIR)/Crosswalker.app/Crosswalker','BUNDLE_LOADER':'$(TEST_HOST)'})
     else: settings['TEST_TARGET_NAME']='Crosswalker'
+    if not is_app: settings['IPHONEOS_DEPLOYMENT_TARGET']='17.0'
     phases=[phase(name+'sources','PBXSourcesBuildPhase',sources),phase(name+'frameworks','PBXFrameworksBuildPhase',[]),phase(name+'resources','PBXResourcesBuildPhase',resource_paths)]
     deps=[]
     if not is_app:

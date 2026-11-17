@@ -1,0 +1,61 @@
+{
+  "date": "2026-11-17",
+  "commit": "37d3fe9e08fae3589538ec78e2f4a5cca4403df5",
+  "scope": "Resultados de las ejecuciones finales; los intentos intermedios sirvieron para corregir la app y las esperas de las pruebas.",
+  "githubVerified": true,
+  "androidProductionTreeClean": true,
+  "ios": {
+    "device": "iPhone 18 Pro",
+    "runtime": "iOS 27.0",
+    "logicalSize": [
+      402,
+      874
+    ],
+    "uiTests": 2,
+    "failed": 0,
+    "levelsWon": 12,
+    "tutorial": true,
+    "retry": true,
+    "backgroundResume": true,
+    "processRestartPersistence": true,
+    "xcresult": "/tmp/crosswalker-runtime-accepted.xcresult"
+  },
+  "compact": {
+    "device": "iPhone SE (3rd generation)",
+    "runtime": "iOS 27.0",
+    "logicalSize": [
+      375,
+      667
+    ],
+    "unitTests": 17,
+    "uiTests": 1,
+    "failed": 0,
+    "levelsWon": 12,
+    "tutorial": true,
+    "retry": true,
+    "backgroundResume": true,
+    "processRestartPersistence": true,
+    "xcresult": "/tmp/crosswalker-compact-final-verified.xcresult"
+  },
+  "android": {
+    "avd": "Medium_Phone_API_37.0",
+    "resolution": [
+      720,
+      1600
+    ],
+    "density": 280,
+    "instrumentedTests": 8,
+    "failed": 0,
+    "levelsWon": 12,
+    "tutorial": true,
+    "retry": true
+  },
+  "macOS": {
+    "swiftPackageTests": 17,
+    "failed": 0
+  },
+  "iPhoneReleaseBuild": "SUCCEEDED",
+  "bundleVerified": true,
+  "acousticComparisonPerformed": false,
+  "signedOrPublished": false
+}

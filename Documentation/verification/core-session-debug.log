@@ -1,0 +1,64 @@
+warning: /Users/alumno/Library/org.swift.swiftpm/configuration is not accessible or not writable, disabling user-level cache features.
+warning: /Users/alumno/Library/org.swift.swiftpm/security is not accessible or not writable, disabling user-level cache features.
+Building for debugging...
+[2 / 11] CrosswalkerCore
+[7 / 16] CrosswalkerCore
+[12 / 19] CrosswalkerCore
+[16 / 25] CrosswalkerCoreTests-product
+[21 / 30] CrosswalkerCoreTests-product
+[27 / 29] CrosswalkerCoreTests-product
+Build complete! (1.34 s)
+Test Suite 'All tests' started at 2026-11-17 12:15:23.659.
+Test Suite 'CrosswalkerCoreTests.xctest' started at 2026-11-17 12:15:23.660.
+Test Suite 'PresentationTests' started at 2026-11-17 12:15:23.660.
+Test Case '-[CrosswalkerCoreTests.PresentationTests testLexiconUsesWordBoundariesAccentsAndCategoryPriority]' started.
+Test Case '-[CrosswalkerCoreTests.PresentationTests testLexiconUsesWordBoundariesAccentsAndCategoryPriority]' passed (0.002 seconds).
+Test Case '-[CrosswalkerCoreTests.PresentationTests testMusicMappingCoversAllScreensAndWorlds]' started.
+Test Case '-[CrosswalkerCoreTests.PresentationTests testMusicMappingCoversAllScreensAndWorlds]' passed (0.000 seconds).
+Test Case '-[CrosswalkerCoreTests.PresentationTests testSpeakerPitchUsesKotlinHash]' started.
+Test Case '-[CrosswalkerCoreTests.PresentationTests testSpeakerPitchUsesKotlinHash]' passed (0.000 seconds).
+Test Case '-[CrosswalkerCoreTests.PresentationTests testTutorialStepsMatchTheSelectedKotlinBranch]' started.
+Test Case '-[CrosswalkerCoreTests.PresentationTests testTutorialStepsMatchTheSelectedKotlinBranch]' passed (0.000 seconds).
+Test Suite 'PresentationTests' passed at 2026-11-17 12:15:23.662.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.002 (0.002) seconds
+Test Suite 'RepositoryTests' started at 2026-11-17 12:15:23.662.
+Test Case '-[CrosswalkerCoreTests.RepositoryTests testProgressSettingsAndUnlocksPersistWithoutLosingBestScore]' started.
+Test Case '-[CrosswalkerCoreTests.RepositoryTests testProgressSettingsAndUnlocksPersistWithoutLosingBestScore]' passed (0.001 seconds).
+Test Suite 'RepositoryTests' passed at 2026-11-17 12:15:23.664.
+	 Executed 1 test, with 0 failures (0 unexpected) in 0.001 (0.001) seconds
+Test Suite 'SessionTests' started at 2026-11-17 12:15:23.664.
+Test Case '-[CrosswalkerCoreTests.SessionTests testBudgetAndWalkerSwapAtLevelFive]' started.
+Test Case '-[CrosswalkerCoreTests.SessionTests testBudgetAndWalkerSwapAtLevelFive]' passed (0.001 seconds).
+Test Case '-[CrosswalkerCoreTests.SessionTests testLevelOneStartsAtConfiguredCrossingAndCanUnlockNextLevel]' started.
+Test Case '-[CrosswalkerCoreTests.SessionTests testLevelOneStartsAtConfiguredCrossingAndCanUnlockNextLevel]' passed (0.002 seconds).
+Test Case '-[CrosswalkerCoreTests.SessionTests testPauseAndTransitionFreezeSimulation]' started.
+Test Case '-[CrosswalkerCoreTests.SessionTests testPauseAndTransitionFreezeSimulation]' passed (0.002 seconds).
+Test Case '-[CrosswalkerCoreTests.SessionTests testResetClearsUnlocksButKeepsPreferences]' started.
+Test Case '-[CrosswalkerCoreTests.SessionTests testResetClearsUnlocksButKeepsPreferences]' passed (0.002 seconds).
+Test Case '-[CrosswalkerCoreTests.SessionTests testReturningToPlanningCancelsPendingResult]' started.
+Test Case '-[CrosswalkerCoreTests.SessionTests testReturningToPlanningCancelsPendingResult]' passed (1.126 seconds).
+Test Case '-[CrosswalkerCoreTests.SessionTests testTutorialAllowsPausePanelAndHelpThroughoutTheGuide]' started.
+Test Case '-[CrosswalkerCoreTests.SessionTests testTutorialAllowsPausePanelAndHelpThroughoutTheGuide]' passed (0.008 seconds).
+Test Case '-[CrosswalkerCoreTests.SessionTests testWinningFinalLevelShowsCreditsAfterResultDelay]' started.
+Test Case '-[CrosswalkerCoreTests.SessionTests testWinningFinalLevelShowsCreditsAfterResultDelay]' passed (1.154 seconds).
+Test Suite 'SessionTests' passed at 2026-11-17 12:15:25.959.
+	 Executed 7 tests, with 0 failures (0 unexpected) in 2.294 (2.295) seconds
+Test Suite 'SimulationTests' started at 2026-11-17 12:15:25.959.
+Test Case '-[CrosswalkerCoreTests.SimulationTests testAndroidReferenceTrajectories]' started.
+Test Case '-[CrosswalkerCoreTests.SimulationTests testAndroidReferenceTrajectories]' passed (0.753 seconds).
+Test Case '-[CrosswalkerCoreTests.SimulationTests testDuplicateCrossingsAreRejectedBeforeMoving]' started.
+Test Case '-[CrosswalkerCoreTests.SimulationTests testDuplicateCrossingsAreRejectedBeforeMoving]' passed (0.000 seconds).
+Test Case '-[CrosswalkerCoreTests.SimulationTests testMovingToAnOccupiedCrossingSwapsAssignmentsWithoutMovingSkills]' started.
+Test Case '-[CrosswalkerCoreTests.SimulationTests testMovingToAnOccupiedCrossingSwapsAssignmentsWithoutMovingSkills]' passed (0.000 seconds).
+Test Case '-[CrosswalkerCoreTests.SimulationTests testSimulationKeepsItsOwnPlanSnapshot]' started.
+Test Case '-[CrosswalkerCoreTests.SimulationTests testSimulationKeepsItsOwnPlanSnapshot]' passed (0.000 seconds).
+Test Suite 'SimulationTests' passed at 2026-11-17 12:15:26.712.
+	 Executed 4 tests, with 0 failures (0 unexpected) in 0.753 (0.754) seconds
+Test Suite 'CrosswalkerCoreTests.xctest' passed at 2026-11-17 12:15:26.712.
+	 Executed 16 tests, with 0 failures (0 unexpected) in 3.051 (3.053) seconds
+Test Suite 'All tests' passed at 2026-11-17 12:15:26.712.
+	 Executed 16 tests, with 0 failures (0 unexpected) in 3.051 (3.053) seconds
+◇ Test run started.
+↳ Testing Library Version: 2403
+↳ Target Platform: arm64e-apple-macos14.0
+✔ Test run with 0 tests in 0 suites passed after 0.001 seconds.

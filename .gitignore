@@ -9,3 +9,6 @@
 
 # Archivo de entrega local
 /dist/
+
+# Android reference pinned by tools/android_reference.py
+/.reference-source/

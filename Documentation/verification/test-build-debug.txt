@@ -1,0 +1,7 @@
+2026-11-17 12:17:43.291 xcodebuild[9316:121958] Logging connecton invalid: <OS_xpc_error: <dictionary: 0x1feaa19a0> { count = 1, transaction: 0, voucher = 0x0, contents =
+[-[SimServiceContext initWithDeveloperDir:connectionType:error:]:504] WARN  : Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
+[-[SimServiceContext initWithDeveloperDir:connectionType:error:]_block_invoke:561] ERROR : Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=409 "Cannot talk to the service used to manage runtime disk images (simdiskimaged) because its launchd job is not registered or was unloaded" UserInfo={NSLocalizedDescription=Cannot talk to the service used to manage runtime disk images (simdiskimaged) because its launchd job is not registered or was unloaded}
+[-[SimServiceContext sendRequest:reply:error:]:2152] ERROR : Unable to deliver request ({
+[-[SimServiceContext sendRequest:reply:error:]:2152] ERROR : Unable to deliver request ({
+2026-11-17 12:17:45.193 appintentsmetadataprocessor[9339:122117] warning: Metadata extraction skipped, no AppIntents.framework dependency found
+** TEST BUILD SUCCEEDED **

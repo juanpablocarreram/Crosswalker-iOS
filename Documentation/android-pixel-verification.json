@@ -1,0 +1,422 @@
+[
+  {
+    "height" : 128,
+    "name" : "car_blue",
+    "rgbaSHA256" : "fdc1802ffdbf40fb732c8f01b86a78ec2c9bffe97a87b2b99d1c82607bb459a1",
+    "width" : 176
+  },
+  {
+    "height" : 128,
+    "name" : "car_coral",
+    "rgbaSHA256" : "49a1db0a9936d2680c8ece0d495e159e6d42ef3206fbeca77be961019605c6ee",
+    "width" : 176
+  },
+  {
+    "height" : 128,
+    "name" : "car_green",
+    "rgbaSHA256" : "0e33513c6b0646e8e742848e3c97dd906bff78b9d99a848bf5968642bb0bf761",
+    "width" : 176
+  },
+  {
+    "height" : 128,
+    "name" : "car_yellow",
+    "rgbaSHA256" : "e72d0ce19d50b9556b2975b88f96788217f5a691dae3610defb8450e5e8f72c8",
+    "width" : 176
+  },
+  {
+    "height" : 96,
+    "name" : "decor_bikerack_campus",
+    "rgbaSHA256" : "3145042f4b7460fdc817b8cde4fa7434b7032e0512204d181ff9ce35938b2f39",
+    "width" : 120
+  },
+  {
+    "height" : 144,
+    "name" : "decor_building_campus",
+    "rgbaSHA256" : "3ccbb12387feed6912f8a329ea9ab22084c909f172124312b3c3101672e20446",
+    "width" : 128
+  },
+  {
+    "height" : 192,
+    "name" : "decor_building_city",
+    "rgbaSHA256" : "75d65a0747a17bda7951db49af3402a8718e1ba7db7e52d8cf5e408dad72bc11",
+    "width" : 128
+  },
+  {
+    "height" : 96,
+    "name" : "decor_busstop_city",
+    "rgbaSHA256" : "9f2ffca5eb71d6796cc7997a79bddd86c8d14dd2f619ad536ebb609de2c568fd",
+    "width" : 96
+  },
+  {
+    "height" : 64,
+    "name" : "decor_fence_barrio",
+    "rgbaSHA256" : "056cefbd2b762a641b4aa1da45eab1acb85cf1c657a973cf36f4034e66a47e1b",
+    "width" : 80
+  },
+  {
+    "height" : 80,
+    "name" : "decor_mailbox_barrio",
+    "rgbaSHA256" : "84d1ab10f35431d2c6158ced7047d9118b6842b95c565228c4be91c5c5f7cf8e",
+    "width" : 48
+  },
+  {
+    "height" : 190,
+    "name" : "fundacion_ado",
+    "rgbaSHA256" : "1bdd334483aed56cef42a2ca7acb5c872239b862cea769b30345ee5c36945b10",
+    "width" : 354
+  },
+  {
+    "height" : 64,
+    "name" : "ground_crosswalk",
+    "rgbaSHA256" : "381527aab4e33b15acb5ab5ac30a1ee9bff0b96faf7724a69396a63c8233710e",
+    "width" : 64
+  },
+  {
+    "height" : 64,
+    "name" : "ground_grass",
+    "rgbaSHA256" : "529995d54fd75e05d85c241fabb05a1c4f5024cb842883b5063e303ee2155b53",
+    "width" : 64
+  },
+  {
+    "height" : 64,
+    "name" : "ground_lane_line",
+    "rgbaSHA256" : "3e6ccefc32f488aeeafb6d8222b5f630b431bcf70ab36da78e6de17c867b26f6",
+    "width" : 64
+  },
+  {
+    "height" : 64,
+    "name" : "ground_road",
+    "rgbaSHA256" : "f2073aa490aa104b0ab3ca46ae42a8a4a256ec1a48ae97ac23196dc1ee8bd283",
+    "width" : 64
+  },
+  {
+    "height" : 64,
+    "name" : "ground_walk",
+    "rgbaSHA256" : "133d3350f6e8ef6d9128daf927aed34cb99b10b83b2d7e8d6c79ed966d149ba4",
+    "width" : 64
+  },
+  {
+    "height" : 64,
+    "name" : "headphones",
+    "rgbaSHA256" : "82568b79467fbf8e0a389245e985f6e87da88aaa94035928940fe836f3d534f8",
+    "width" : 64
+  },
+  {
+    "height" : 1200,
+    "name" : "home_diorama",
+    "rgbaSHA256" : "32517d046a6aaa8218b88a0a88922ce883afab1e2b337240beab13e9fab55e88",
+    "width" : 960
+  },
+  {
+    "height" : 512,
+    "name" : "house",
+    "rgbaSHA256" : "de5e9782562aa44f089e61ca1d4399d611f6203e4687d30360e7101a63ea1ddc",
+    "width" : 384
+  },
+  {
+    "height" : 128,
+    "name" : "icon_bump",
+    "rgbaSHA256" : "b63cb63093dd3508d5adf80bd23d1a67986f97617f14318726ae5411ac7e096b",
+    "width" : 128
+  },
+  {
+    "height" : 128,
+    "name" : "icon_crosswalk",
+    "rgbaSHA256" : "edddadfad1149b411af53c698dc62ef209b8d08b405a97e9fb8ffb9dc6053a7c",
+    "width" : 128
+  },
+  {
+    "height" : 128,
+    "name" : "icon_escort",
+    "rgbaSHA256" : "8585dbc884348e3441244832b9a7c1dfa90123e581bfa685a45789b8b5d546e5",
+    "width" : 128
+  },
+  {
+    "height" : 128,
+    "name" : "icon_headlights",
+    "rgbaSHA256" : "32cab8d7f5d7650a80e2075bbb21d49ec669d78c594778adace58dc471b3390b",
+    "width" : 128
+  },
+  {
+    "height" : 64,
+    "name" : "icon_headphones_off",
+    "rgbaSHA256" : "7b550a113865435c40f622b576124277397a5fffa45b783ed06351d9f184943a",
+    "width" : 64
+  },
+  {
+    "height" : 128,
+    "name" : "icon_island",
+    "rgbaSHA256" : "64b301c8daaf2d80c30bccf9cc47616f330af24a5ac138d8ba5ab602e519ac6f",
+    "width" : 128
+  },
+  {
+    "height" : 128,
+    "name" : "icon_look",
+    "rgbaSHA256" : "17f18347f5d4d147680993e48cad7ebc92dbb1dd314e067fdf427f77e857fc6e",
+    "width" : 224
+  },
+  {
+    "height" : 88,
+    "name" : "icon_officer",
+    "rgbaSHA256" : "3be0b1bb33d0891d47a05864084b8b80accd639110985d25aecb7cc2475efb84",
+    "width" : 88
+  },
+  {
+    "height" : 120,
+    "name" : "icon_phone_away",
+    "rgbaSHA256" : "d1e5164c7fb6a2765b99d359c232760001b6cb6b1b30b5707d80f007622070c3",
+    "width" : 64
+  },
+  {
+    "height" : 128,
+    "name" : "icon_reflector",
+    "rgbaSHA256" : "4e9f5f3e853c810f53dfb6b955e41efb4d5050267c6fbe9abf99834919bb6fdb",
+    "width" : 128
+  },
+  {
+    "height" : 120,
+    "name" : "icon_signal",
+    "rgbaSHA256" : "6e9c55a8630acc97c6c923e9da310d097a874321c7064fa3e89bfb66b38da1b1",
+    "width" : 104
+  },
+  {
+    "height" : 128,
+    "name" : "icon_streetlamp",
+    "rgbaSHA256" : "8fb4d8fd41b021c2d43a997b3930a44a33cad6e038342010fdf13e62f432d5e4",
+    "width" : 128
+  },
+  {
+    "height" : 72,
+    "name" : "icon_wait",
+    "rgbaSHA256" : "36088c927dec272d7acbcbdc630a15475d0f654f259f1ad232851bfb1804abfc",
+    "width" : 128
+  },
+  {
+    "height" : 512,
+    "name" : "material_cream",
+    "rgbaSHA256" : "832cdad4b089e878e7efd601669f56a586fbaf1710816321d9d2cd3a9ca66919",
+    "width" : 512
+  },
+  {
+    "height" : 512,
+    "name" : "material_felt",
+    "rgbaSHA256" : "aa5f0d2b8288597d14f8ddeb2272361d391161f79812bc78a78c97ddd252fb70",
+    "width" : 512
+  },
+  {
+    "height" : 512,
+    "name" : "material_kraft",
+    "rgbaSHA256" : "d948c940ff22449579fee1e90cda57c18b54132f6dad34f38823a59ae449e5d3",
+    "width" : 512
+  },
+  {
+    "height" : 512,
+    "name" : "material_road",
+    "rgbaSHA256" : "8057391dfe209859e15474d7d4c8fd17025a89f8976fc83856931620ac61c5a2",
+    "width" : 512
+  },
+  {
+    "height" : 72,
+    "name" : "obstacle_barricade_barrio",
+    "rgbaSHA256" : "ef8db5d59151a3fcde38ae255de77785ffe91e380af4b2770c58b985c026f785",
+    "width" : 112
+  },
+  {
+    "height" : 80,
+    "name" : "obstacle_cone_campus",
+    "rgbaSHA256" : "2c66357c7da74daf3e98bfbbce222f48ef8cc5568b57364fc1056dc1d8aa6aab",
+    "width" : 80
+  },
+  {
+    "height" : 120,
+    "name" : "phone",
+    "rgbaSHA256" : "11cdb06c2653fea702f93460409c5cf9b98f6c15d44ffa52e3188050ffac11e6",
+    "width" : 64
+  },
+  {
+    "height" : 208,
+    "name" : "pointer_hand",
+    "rgbaSHA256" : "92c965e34d4faa76a638f0a8ba8f483c3534d7682e027015fb8bee3621b03dce",
+    "width" : 184
+  },
+  {
+    "height" : 48,
+    "name" : "ramp",
+    "rgbaSHA256" : "1c2537281237c7835e2a834e5d4d3b34a413bf99390586b97e6691b121248512",
+    "width" : 64
+  },
+  {
+    "height" : 128,
+    "name" : "star",
+    "rgbaSHA256" : "fa8dc7dd801c221e350b4f766b0107a8e7120eda01c7cf0e72f286594e2e361e",
+    "width" : 128
+  },
+  {
+    "height" : 240,
+    "name" : "stop_sign",
+    "rgbaSHA256" : "bcecf262abdd02f3c6d9cdb4f008d188fe3cb63502d320521ea2b35dd8c084c3",
+    "width" : 88
+  },
+  {
+    "height" : 120,
+    "name" : "traffic_light",
+    "rgbaSHA256" : "6e9c55a8630acc97c6c923e9da310d097a874321c7064fa3e89bfb66b38da1b1",
+    "width" : 104
+  },
+  {
+    "height" : 240,
+    "name" : "tree",
+    "rgbaSHA256" : "96ae6f3ac8e99175f4a90480eb286cc4e85050adf39bdfe3fbf62c0ad0551198",
+    "width" : 112
+  },
+  {
+    "height" : 240,
+    "name" : "tree_autumn",
+    "rgbaSHA256" : "8444da782707fe7e28091a98fae5009ef2f8bf1e4a5f255efedfa36e9cee005d",
+    "width" : 112
+  },
+  {
+    "height" : 120,
+    "name" : "walker_blue",
+    "rgbaSHA256" : "c000bb5d42ef19eb9ef23eecc4fa9d35577b5f2b17aff1787497421aee5bdedb",
+    "width" : 96
+  },
+  {
+    "height" : 128,
+    "name" : "walker_blue_w0",
+    "rgbaSHA256" : "30ae32ea9e3d61da8d93ab851a0dd52dd7726de5697a87afeec75c91f8645245",
+    "width" : 96
+  },
+  {
+    "height" : 128,
+    "name" : "walker_blue_w1",
+    "rgbaSHA256" : "cabe355987d29974204a404c2b2beffe1f8bfa0bc3dd2b8a71fba7a5099a4c6c",
+    "width" : 96
+  },
+  {
+    "height" : 128,
+    "name" : "walker_blue_w2",
+    "rgbaSHA256" : "74010ed23355fa61ad6c8f3c09547b91b0ad24e9beba4f1c038e0a8d41c5eec1",
+    "width" : 96
+  },
+  {
+    "height" : 208,
+    "name" : "walker_chair",
+    "rgbaSHA256" : "8fd1371f2a142df04cd9e444fa882eb0052d4fa55bade9b00db061dbaef343e4",
+    "width" : 160
+  },
+  {
+    "height" : 192,
+    "name" : "walker_chair_w0",
+    "rgbaSHA256" : "3cce9a3ac336ac1f5a7eec978856402ac440bd5c1c525d7fb563c29b4bc4f150",
+    "width" : 160
+  },
+  {
+    "height" : 192,
+    "name" : "walker_chair_w1",
+    "rgbaSHA256" : "4e76f87efb96e075d512fb9cf241d69622c7dc7eaff5e3db644e0a4f1853dcf4",
+    "width" : 160
+  },
+  {
+    "height" : 192,
+    "name" : "walker_chair_w2",
+    "rgbaSHA256" : "7fe2516ae99fdeec38cce40ce779c6af96a1d8951f502d0080c6cd0b7fd59cb0",
+    "width" : 160
+  },
+  {
+    "height" : 112,
+    "name" : "walker_coral",
+    "rgbaSHA256" : "7227a0ac7f70176d05aef8eaa02cb29cab24cca242ee8482285a8c94b7b2f3df",
+    "width" : 96
+  },
+  {
+    "height" : 120,
+    "name" : "walker_coral_w0",
+    "rgbaSHA256" : "8d1c92b6d1a06f8623b0dc872db07e2d158ecc364400507012bd8074efcbf8e3",
+    "width" : 96
+  },
+  {
+    "height" : 120,
+    "name" : "walker_coral_w1",
+    "rgbaSHA256" : "1aa96d8b6d4e3370845d2df1e1f1247a9d38bb296ad0b771e68f15293f0e83e7",
+    "width" : 96
+  },
+  {
+    "height" : 120,
+    "name" : "walker_coral_w2",
+    "rgbaSHA256" : "9ea2b7583a1d9fcd71698ddc1ed4fc628d98be78f010f787184d7c682c4056cd",
+    "width" : 96
+  },
+  {
+    "height" : 112,
+    "name" : "walker_green",
+    "rgbaSHA256" : "094c9b9fef853ffa72c7c8df50178bb9ea2c0813a3cbb600afed413aa0f88b4a",
+    "width" : 96
+  },
+  {
+    "height" : 120,
+    "name" : "walker_green_w0",
+    "rgbaSHA256" : "d6959b79220c3ffef966bdcc32a35076bc8997bfb6366a8413708193b069d7b7",
+    "width" : 96
+  },
+  {
+    "height" : 120,
+    "name" : "walker_green_w1",
+    "rgbaSHA256" : "7c7d351b95d70162a665a10ce5efe71d601132271b88c64cdb1ae4cc2b4de92d",
+    "width" : 96
+  },
+  {
+    "height" : 120,
+    "name" : "walker_green_w2",
+    "rgbaSHA256" : "51e124ddc25d1a4656da5e6a0a9d430b3767bcb7a16698dc862092e70b08af94",
+    "width" : 96
+  },
+  {
+    "height" : 112,
+    "name" : "walker_rust",
+    "rgbaSHA256" : "2e4620af7101673a18f7a774bcc659badb53031be9e473676084afabb3a65c36",
+    "width" : 96
+  },
+  {
+    "height" : 120,
+    "name" : "walker_rust_w0",
+    "rgbaSHA256" : "23881dd88d6606771a87f316afdfe72858c7f41f5636209d9cb84dd1c11577de",
+    "width" : 96
+  },
+  {
+    "height" : 120,
+    "name" : "walker_rust_w1",
+    "rgbaSHA256" : "c8ec0e6d9efeafb0421743a46aff8439ee7c801cdab48e561b79267bd9d428b9",
+    "width" : 96
+  },
+  {
+    "height" : 120,
+    "name" : "walker_rust_w2",
+    "rgbaSHA256" : "49e7fd1df9cf33a3ec3311eee55ecca53f7b9526505d04c5cdd3aee72f32d7e8",
+    "width" : 96
+  },
+  {
+    "height" : 104,
+    "name" : "walker_slate",
+    "rgbaSHA256" : "d015f4859e5c28bd8f5f2a24fcacb166185a1d80fb43fd1c11999fad93277fb8",
+    "width" : 96
+  },
+  {
+    "height" : 112,
+    "name" : "walker_slate_w0",
+    "rgbaSHA256" : "822e31a4e6af1547ad416c5bc49f743b81190bc2847529ac461ca9dc16c949d9",
+    "width" : 96
+  },
+  {
+    "height" : 112,
+    "name" : "walker_slate_w1",
+    "rgbaSHA256" : "54c6742581c7cfaa2117a438e69a9fab0f6dba0a8c32a5904803cba7cfa467e3",
+    "width" : 96
+  },
+  {
+    "height" : 112,
+    "name" : "walker_slate_w2",
+    "rgbaSHA256" : "02391e1b4536cf78a2d12dc1e780bb2851f81f9e19965481de7b6b4e7e1f4c31",
+    "width" : 96
+  }
+]

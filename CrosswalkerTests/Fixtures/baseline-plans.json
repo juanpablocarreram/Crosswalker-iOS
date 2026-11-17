@@ -1,0 +1,355 @@
+[
+  {
+    "name": "guidance",
+    "level": 1,
+    "crossings": [
+      1
+    ],
+    "skills": {
+      "ana": [
+        "look"
+      ]
+    },
+    "street": []
+  },
+  {
+    "name": "unprepared",
+    "level": 1,
+    "crossings": [
+      2
+    ],
+    "skills": {},
+    "street": []
+  },
+  {
+    "name": "guidance",
+    "level": 2,
+    "crossings": [
+      1
+    ],
+    "skills": {
+      "tomas": [
+        "look",
+        "phone_away"
+      ]
+    },
+    "street": []
+  },
+  {
+    "name": "unprepared",
+    "level": 2,
+    "crossings": [
+      0
+    ],
+    "skills": {},
+    "street": []
+  },
+  {
+    "name": "guidance",
+    "level": 3,
+    "crossings": [
+      1
+    ],
+    "skills": {
+      "mateo": [
+        "look"
+      ]
+    },
+    "street": [
+      "crosswalk"
+    ]
+  },
+  {
+    "name": "unprepared",
+    "level": 3,
+    "crossings": [
+      2
+    ],
+    "skills": {},
+    "street": []
+  },
+  {
+    "name": "guidance",
+    "level": 4,
+    "crossings": [
+      1
+    ],
+    "skills": {
+      "leo": [
+        "headphones_off",
+        "look"
+      ]
+    },
+    "street": []
+  },
+  {
+    "name": "unprepared",
+    "level": 4,
+    "crossings": [
+      2
+    ],
+    "skills": {},
+    "street": []
+  },
+  {
+    "name": "guidance",
+    "level": 5,
+    "crossings": [
+      1,
+      0
+    ],
+    "skills": {
+      "ana": [
+        "escort",
+        "look"
+      ],
+      "tomas": [
+        "look",
+        "phone_away"
+      ]
+    },
+    "street": []
+  },
+  {
+    "name": "unprepared",
+    "level": 5,
+    "crossings": [
+      2,
+      1
+    ],
+    "skills": {},
+    "street": []
+  },
+  {
+    "name": "guidance",
+    "level": 6,
+    "crossings": [
+      1,
+      0
+    ],
+    "skills": {
+      "ana": [
+        "look"
+      ],
+      "mateo": [
+        "look"
+      ]
+    },
+    "street": [
+      "crosswalk"
+    ]
+  },
+  {
+    "name": "unprepared",
+    "level": 6,
+    "crossings": [
+      2,
+      0
+    ],
+    "skills": {},
+    "street": []
+  },
+  {
+    "name": "guidance",
+    "level": 7,
+    "crossings": [
+      1,
+      0
+    ],
+    "skills": {
+      "luz": [
+        "look"
+      ],
+      "ana": [
+        "look"
+      ]
+    },
+    "street": [
+      "speed_zone"
+    ]
+  },
+  {
+    "name": "unprepared",
+    "level": 7,
+    "crossings": [
+      0,
+      1
+    ],
+    "skills": {},
+    "street": []
+  },
+  {
+    "name": "guidance",
+    "level": 8,
+    "crossings": [
+      1,
+      0
+    ],
+    "skills": {
+      "luz": [
+        "look"
+      ],
+      "mateo": [
+        "look"
+      ]
+    },
+    "street": [
+      "crosswalk"
+    ]
+  },
+  {
+    "name": "unprepared",
+    "level": 8,
+    "crossings": [
+      2,
+      0
+    ],
+    "skills": {},
+    "street": []
+  },
+  {
+    "name": "guidance",
+    "level": 9,
+    "crossings": [
+      1
+    ],
+    "skills": {},
+    "street": [
+      "car_lights",
+      "speed_zone"
+    ]
+  },
+  {
+    "name": "unprepared",
+    "level": 9,
+    "crossings": [
+      0
+    ],
+    "skills": {},
+    "street": []
+  },
+  {
+    "name": "guidance",
+    "level": 10,
+    "crossings": [
+      0,
+      2
+    ],
+    "skills": {
+      "tomas": [
+        "phone_away"
+      ]
+    },
+    "street": [
+      "car_lights",
+      "speed_zone"
+    ]
+  },
+  {
+    "name": "unprepared",
+    "level": 10,
+    "crossings": [
+      1,
+      2
+    ],
+    "skills": {},
+    "street": []
+  },
+  {
+    "name": "guidance",
+    "level": 11,
+    "crossings": [
+      1,
+      0
+    ],
+    "skills": {},
+    "street": [
+      "car_lights",
+      "speed_zone"
+    ]
+  },
+  {
+    "name": "unprepared",
+    "level": 11,
+    "crossings": [
+      2,
+      1
+    ],
+    "skills": {},
+    "street": []
+  },
+  {
+    "name": "guidance",
+    "level": 12,
+    "crossings": [
+      1,
+      0,
+      2
+    ],
+    "skills": {
+      "tomas": [
+        "phone_away"
+      ]
+    },
+    "street": [
+      "car_lights",
+      "crosswalk",
+      "speed_zone"
+    ]
+  },
+  {
+    "name": "unprepared",
+    "level": 12,
+    "crossings": [
+      0,
+      1,
+      2
+    ],
+    "skills": {},
+    "street": []
+  },
+  {
+    "name": "rain braking without slower traffic",
+    "level": 7,
+    "crossings": [
+      1,
+      0
+    ],
+    "skills": {
+      "luz": [
+        "look"
+      ],
+      "ana": [
+        "escort",
+        "look"
+      ]
+    },
+    "street": []
+  },
+  {
+    "name": "unmarked crossing despite both traffic aids",
+    "level": 9,
+    "crossings": [
+      0
+    ],
+    "skills": {},
+    "street": [
+      "car_lights",
+      "speed_zone"
+    ]
+  },
+  {
+    "name": "two-way traffic with a distracted plan",
+    "level": 5,
+    "crossings": [
+      1,
+      0
+    ],
+    "skills": {
+      "tomas": [
+        "phone_away"
+      ]
+    },
+    "street": []
+  }
+]

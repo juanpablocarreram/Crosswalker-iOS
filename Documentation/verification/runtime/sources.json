@@ -1,0 +1,17 @@
+{
+  "androidHead": "37d3fe9e08fae3589538ec78e2f4a5cca4403df5",
+  "androidProductionTreeClean": true,
+  "iosHead": "140441ecbb3c347577870f0c86b3120b2c2933ab",
+  "iosHasLocalChanges": true,
+  "sha256": {
+    "Crosswalker/CrosswalkerApp.swift": "5d4d9433266f4667070231b92b3aee4101c2d01c5d0d180c26b326b36177ac97",
+    "Crosswalker/Session.swift": "e45333a5f4f4fb9d33183b1dd85d1de9a57905290104e1577126ae0e2c43f501",
+    "Crosswalker/UI/Screens.swift": "7c09dfca7721305bfe19c46ef2717f4d505514ee8630c58ec4e61323e8cb471e",
+    "Crosswalker/UI/Board.swift": "ca8035717c5b5874a5d4a9d17ccfc7fb71d9f418c4b683ccfd5376a3962eb0d3",
+    "Crosswalker/UI/CraftArt.swift": "911a670e1d290a6547a4a19f8aa2ffdc8a99969099b994783c903a3789debea5",
+    "Crosswalker/UI/Dialogs.swift": "aedc197848a41ac2548f27fd325833846a4f8d77fc02ef7a10fc4005156a6d73",
+    "Crosswalker/UI/HomeAndCredits.swift": "396cf0464c250fd3972a82c8aec006f5eaa3f9acb9540e34452b223845e3926f",
+    "CrosswalkerUITests/NavigationTests.swift": "33c98d0ee7e61237536f974e6d323c89f598e2afe96fff0b71c932527c95f47c",
+    "tools/android/CrossPlatformExecutionTest.kt": "a052e589bda81f11a33a131ad3c25348aadf0dcb31d0858e125f5cac4dc9c1bd"
+  }
+}

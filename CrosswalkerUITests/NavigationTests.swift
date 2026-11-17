@@ -1,34 +1,344 @@
 import XCTest
 
 final class NavigationTests: XCTestCase {
-    private var app: XCUIApplication!
+  private var app: XCUIApplication!
 
-    override func setUpWithError() throws {
-        continueAfterFailure = false
-        app = XCUIApplication()
-        app.launchArguments = ["--ui-test-reset"]
-        app.launch()
+  override func setUpWithError() throws {
+    continueAfterFailure = false
+    app = XCUIApplication()
+    app.launchArguments = ["--ui-test-reset"]
+    app.launch()
+  }
+
+  private func button(_ label: String) -> XCUIElement {
+    app.buttons.matching(NSPredicate(format: "label CONTAINS %@", label)).firstMatch
+  }
+
+  private func tap(_ label: String) {
+    let control = button(label)
+    if !control.exists { XCTAssertTrue(control.waitForExistence(timeout: 8), label) }
+    if !control.isHittable || !control.isEnabled {
+      let ready = expectation(for: NSPredicate(format: "isHittable == true AND isEnabled == true"), evaluatedWith: control)
+      wait(for: [ready], timeout: 8)
     }
+    control.tap()
+    // Infinite board/pointer animations prevent XCTest's idle heuristic from settling finite transitions.
+    RunLoop.current.run(until: Date().addingTimeInterval(0.35))
+  }
 
-    private func tap(_ label: String) {
-        let button = app.buttons.matching(NSPredicate(format: "label CONTAINS %@", label)).firstMatch
-        XCTAssertTrue(button.waitForExistence(timeout: 6), label)
-        let ready = expectation(for: NSPredicate(format: "isHittable == true AND isEnabled == true"), evaluatedWith: button)
-        wait(for: [ready], timeout: 6)
-        button.tap()
+  private func capture(_ name: String) {
+    RunLoop.current.run(until: Date().addingTimeInterval(0.35))
+    let attachment = XCTAttachment(screenshot: app.screenshot())
+    attachment.name = name
+    attachment.lifetime = .keepAlways
+    add(attachment)
+  }
+
+  func testWorldsProgressionAndPlan() {
+    capture("home")
+    tap("JUGAR")
+    tap("MUNDO 2")
+    XCTAssertTrue(app.staticTexts["La escuela"].waitForExistence(timeout: 6))
+    XCTAssertFalse(button("Nivel 5,").isEnabled)
+    tap("MUNDO 1")
+    tap("Mi primer cruce")
+    tap("PREPARAR EL PLAN")
+    capture("tutorial-closed")
+    tap("ABRIR PLAN")
+    capture("tutorial-00")
+    XCTAssertFalse(button("PONER EL PLAN EN MARCHA").isEnabled)
+    // Android advances a tutorial line immediately, even while it is still typing.
+    tap("¡Hola! Soy Ana.")
+    XCTAssertTrue(button("Nuestro objetivo").waitForExistence(timeout: 3))
+  }
+
+  private func tapID(_ id: String) {
+    let control = app.buttons[id]
+    if !control.exists { XCTAssertTrue(control.waitForExistence(timeout: 6), id) }
+    if !control.isHittable {
+      let palette = app.scrollViews["tool-palette"]
+      palette.swipeLeft()
+      if !control.isHittable { palette.swipeRight() }
     }
+    XCTAssertTrue(control.isEnabled, id)
+    XCTAssertTrue(control.isHittable, id)
+    control.tap()
+    // Infinite board/pointer animations prevent XCTest's idle heuristic from settling finite transitions.
+    RunLoop.current.run(until: Date().addingTimeInterval(0.35))
+  }
 
-    func testWorldsProgressionAndPlan() {
-        tap("JUGAR")
-        tap("MUNDO 2")
-        XCTAssertTrue(app.staticTexts["Campus de innovación"].waitForExistence(timeout: 6))
-        XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Nivel 5,")).firstMatch.exists)
-        XCTAssertFalse(app.buttons.matching(NSPredicate(format: "label BEGINSWITH %@", "Nivel 5,")).firstMatch.isEnabled)
-        tap("MUNDO 1")
-        tap("Mi primer cruce")
-        tap("PREPARAR EL PLAN")
+  private func waitForValueChange(_ board: XCUIElement, from before: String) {
+    let moved = expectation(for: NSPredicate { _, _ in
+      board.exists && (board.value as? String) != before
+    }, evaluatedWith: board)
+    wait(for: [moved], timeout: 35)
+  }
+
+  func testCompleteTutorialAndCampaignWithRealMovement() {
+    capture("home")
+    tap("JUGAR")
+    tap("Mi primer cruce")
+    tap("PREPARAR EL PLAN")
+    capture("tutorial-closed")
+    tap("ABRIR PLAN")
+    let dialogue = app.buttons["planning-dialogue"]
+    for index in 0..<10 {
+      if index == 2 {
+        capture("tutorial-map")
         tap("ABRIR PLAN")
-        XCTAssertTrue(app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "PONER EL PLAN EN MARCHA")).firstMatch.exists)
-        XCTAssertFalse(app.buttons.matching(NSPredicate(format: "label CONTAINS %@", "PONER EL PLAN EN MARCHA")).firstMatch.isEnabled)
+        continue
+      }
+      XCTAssertTrue(dialogue.waitForExistence(timeout: 6))
+      capture(String(format: "tutorial-%02d", index))
+      if index == 1 {
+        let line = dialogue.label
+        XCTAssertFalse(app.buttons["tab-street"].isEnabled)
+        tap("Pausa")
+        capture("tutorial-pause")
+        tap("CONTINUAR")
+        XCTAssertEqual(dialogue.label, line)
+        tap("CERRAR PLAN")
+        tap("ABRIR PLAN")
+        XCTAssertEqual(dialogue.label, line)
+      }
+      let before = dialogue.label
+      dialogue.tap()
+      let changed = expectation(for: NSPredicate { _, _ in dialogue.label != before }, evaluatedWith: dialogue)
+      wait(for: [changed], timeout: 4)
     }
+    capture("tutorial-crossing")
+    let crossingLine = dialogue.label
+    dialogue.tap()
+    XCTAssertEqual(dialogue.label, crossingLine)
+    tapID("crossing-1")
+    capture("tutorial-look")
+    tap("Explicar Mirar")
+    capture("tutorial-tool-help")
+    tap("ENTENDIDO")
+    tapID("tool-look")
+    capture("tutorial-launch")
+    tapID("launch-plan")
+    let board = app.otherElements["crossing-board"]
+    XCTAssertTrue(board.waitForExistence(timeout: 6))
+    let before = board.value as? String ?? ""
+    capture("level-01-running-start")
+    waitForValueChange(board, from: before)
+    capture("level-01-running-moved")
+    tap("Pausa")
+    capture("simulation-pause")
+    tap("CONTINUAR")
+    XCUIDevice.shared.press(.home)
+    app.activate()
+    tap("CONTINUAR")
+    XCTAssertTrue(button("SIGUIENTE CAMINO").waitForExistence(timeout: 35))
+    capture("level-01-won")
+    tap("VOLVER A INTENTAR")
+    tap("ABRIR PLAN")
+    tapID("tool-look")
+    tapID("crossing-2")
+    capture("unsafe-plan")
+    tapID("launch-plan")
+    XCTAssertTrue(button("MEJORAR MI PLAN").waitForExistence(timeout: 30))
+    capture("collision-result")
+    tap("MEJORAR MI PLAN")
+    tap("ABRIR PLAN")
+    tapID("crossing-1")
+    tapID("tool-look")
+    tapID("launch-plan")
+    XCTAssertTrue(button("SIGUIENTE CAMINO").waitForExistence(timeout: 30))
+    capture("retry-won")
+    tap("SIGUIENTE CAMINO")
+    tap("ABRIR PLAN")
+    tapID("walker-tomas")
+    tapID("crossing-1")
+    tapID("tool-look")
+    tapID("tool-phone_away")
+    capture("level-02-plan")
+    tapID("launch-plan")
+    XCTAssertTrue(board.waitForExistence(timeout: 6))
+    waitForValueChange(board, from: board.value as? String ?? "")
+    capture("level-02-running")
+    XCTAssertTrue(button("SIGUIENTE CAMINO").waitForExistence(timeout: 60))
+    capture("level-02-won")
+    tap("SIGUIENTE CAMINO")
+    tap("ABRIR PLAN")
+    tapID("walker-mateo")
+    tapID("crossing-1")
+    tapID("tool-look")
+    tapID("tab-street")
+    tapID("tool-crosswalk")
+    capture("level-03-plan")
+    tapID("launch-plan")
+    XCTAssertTrue(board.waitForExistence(timeout: 6))
+    waitForValueChange(board, from: board.value as? String ?? "")
+    capture("level-03-running")
+    XCTAssertTrue(button("SIGUIENTE CAMINO").waitForExistence(timeout: 60))
+    capture("level-03-won")
+    tap("SIGUIENTE CAMINO")
+    tap("ABRIR PLAN")
+    tapID("walker-leo")
+    tapID("crossing-1")
+    tapID("tool-headphones_off")
+    tapID("tool-look")
+    capture("level-04-plan")
+    tapID("launch-plan")
+    XCTAssertTrue(board.waitForExistence(timeout: 6))
+    waitForValueChange(board, from: board.value as? String ?? "")
+    capture("level-04-running")
+    XCTAssertTrue(button("SIGUIENTE CAMINO").waitForExistence(timeout: 60))
+    capture("level-04-won")
+    tap("SIGUIENTE CAMINO")
+    tap("ABRIR PLAN")
+    tapID("walker-ana")
+    tapID("crossing-1")
+    tapID("tool-escort")
+    tapID("tool-look")
+    tapID("walker-tomas")
+    tapID("crossing-0")
+    tapID("tool-look")
+    tapID("tool-phone_away")
+    capture("level-05-plan")
+    tapID("launch-plan")
+    XCTAssertTrue(board.waitForExistence(timeout: 6))
+    waitForValueChange(board, from: board.value as? String ?? "")
+    capture("level-05-running")
+    XCTAssertTrue(button("SIGUIENTE CAMINO").waitForExistence(timeout: 60))
+    capture("level-05-won")
+    tap("SIGUIENTE CAMINO")
+    tap("ABRIR PLAN")
+    tapID("walker-mateo")
+    tapID("crossing-1")
+    tapID("tool-look")
+    tapID("walker-ana")
+    tapID("crossing-0")
+    tapID("tool-look")
+    tapID("tab-street")
+    tapID("tool-crosswalk")
+    capture("level-06-plan")
+    tapID("launch-plan")
+    XCTAssertTrue(board.waitForExistence(timeout: 6))
+    waitForValueChange(board, from: board.value as? String ?? "")
+    capture("level-06-running")
+    XCTAssertTrue(button("SIGUIENTE CAMINO").waitForExistence(timeout: 60))
+    capture("level-06-won")
+    tap("SIGUIENTE CAMINO")
+    tap("ABRIR PLAN")
+    tapID("walker-luz")
+    tapID("crossing-1")
+    tapID("tool-look")
+    tapID("walker-ana")
+    tapID("crossing-0")
+    tapID("tool-look")
+    tapID("tab-street")
+    tapID("tool-speed_zone")
+    capture("level-07-plan")
+    tapID("launch-plan")
+    XCTAssertTrue(board.waitForExistence(timeout: 6))
+    waitForValueChange(board, from: board.value as? String ?? "")
+    capture("level-07-running")
+    XCTAssertTrue(button("SIGUIENTE CAMINO").waitForExistence(timeout: 60))
+    capture("level-07-won")
+    tap("SIGUIENTE CAMINO")
+    tap("ABRIR PLAN")
+    tapID("walker-mateo")
+    tapID("crossing-1")
+    tapID("tool-look")
+    tapID("walker-luz")
+    tapID("crossing-0")
+    tapID("tool-look")
+    tapID("tab-street")
+    tapID("tool-crosswalk")
+    capture("level-08-plan")
+    tapID("launch-plan")
+    XCTAssertTrue(board.waitForExistence(timeout: 6))
+    waitForValueChange(board, from: board.value as? String ?? "")
+    capture("level-08-running")
+    XCTAssertTrue(button("SIGUIENTE CAMINO").waitForExistence(timeout: 60))
+    capture("level-08-won")
+    tap("SIGUIENTE CAMINO")
+    tap("ABRIR PLAN")
+    tapID("walker-ana")
+    tapID("crossing-1")
+    tapID("tab-street")
+    tapID("tool-car_lights")
+    tapID("tool-speed_zone")
+    capture("level-09-plan")
+    tapID("launch-plan")
+    XCTAssertTrue(board.waitForExistence(timeout: 6))
+    waitForValueChange(board, from: board.value as? String ?? "")
+    capture("level-09-running")
+    XCTAssertTrue(button("SIGUIENTE CAMINO").waitForExistence(timeout: 60))
+    capture("level-09-won")
+    tap("SIGUIENTE CAMINO")
+    tap("ABRIR PLAN")
+    tapID("walker-tomas")
+    tapID("crossing-0")
+    tapID("tool-phone_away")
+    tapID("walker-ana")
+    tapID("crossing-2")
+    tapID("tab-street")
+    tapID("tool-car_lights")
+    tapID("tool-speed_zone")
+    capture("level-10-plan")
+    tapID("launch-plan")
+    XCTAssertTrue(board.waitForExistence(timeout: 6))
+    waitForValueChange(board, from: board.value as? String ?? "")
+    capture("level-10-running")
+    XCTAssertTrue(button("SIGUIENTE CAMINO").waitForExistence(timeout: 60))
+    capture("level-10-won")
+    tap("SIGUIENTE CAMINO")
+    tap("ABRIR PLAN")
+    tapID("walker-luz")
+    tapID("crossing-1")
+    tapID("walker-ana")
+    tapID("crossing-0")
+    tapID("tab-street")
+    tapID("tool-car_lights")
+    tapID("tool-speed_zone")
+    capture("level-11-plan")
+    tapID("launch-plan")
+    XCTAssertTrue(board.waitForExistence(timeout: 6))
+    waitForValueChange(board, from: board.value as? String ?? "")
+    capture("level-11-running")
+    XCTAssertTrue(button("SIGUIENTE CAMINO").waitForExistence(timeout: 60))
+    capture("level-11-won")
+    tap("SIGUIENTE CAMINO")
+    tap("ABRIR PLAN")
+    tapID("walker-mateo")
+    tapID("crossing-1")
+    tapID("walker-tomas")
+    tapID("crossing-0")
+    tapID("tool-phone_away")
+    tapID("walker-luz")
+    tapID("crossing-2")
+    tapID("tab-street")
+    tapID("tool-car_lights")
+    tapID("tool-crosswalk")
+    tapID("tool-speed_zone")
+    capture("level-12-plan")
+    tapID("launch-plan")
+    XCTAssertTrue(board.waitForExistence(timeout: 6))
+    waitForValueChange(board, from: board.value as? String ?? "")
+    capture("level-12-running")
+    XCTAssertTrue(button("VOLVER AL MENÚ DE INICIO").waitForExistence(timeout: 60))
+    capture("level-12-won")
+    // The return button follows the automatically scrolling credits, as on Android.
+    let creditsFinished = expectation(
+      for: NSPredicate(format: "isHittable == true AND isEnabled == true"),
+      evaluatedWith: button("VOLVER AL MENÚ DE INICIO"))
+    wait(for: [creditsFinished], timeout: 150)
+    capture("credits-end")
+    tap("VOLVER AL MENÚ DE INICIO")
+    tap("SEGUIR JUGANDO")
+    app.terminate()
+    app.launchArguments = ["--ui-test"]
+    app.launch()
+    tap("JUGAR")
+    XCTAssertTrue(app.staticTexts["12 / 12"].waitForExistence(timeout: 8))
+    tap("MUNDO 3")
+    let finalLevel = button("La ciudad de todos")
+    if !finalLevel.isHittable { app.swipeUp() }
+    XCTAssertTrue(finalLevel.isEnabled)
+    capture("persisted-campaign")
+  }
 }
